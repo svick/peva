@@ -22,15 +22,15 @@ When compiled using the RuyJit compiler from .Net Core, this code performs three
 00007FF8FA5429AC  mov         edx,0FFFFFFFFh  
 00007FF8FA5429B1  and         rdx,rax  
 00007FF8FA5429B4  test        rdx,rdx  
-00007FF8FA5429B7  jg          00007FF8FA542A0B    // jump 1
+00007FF8FA5429B7  jg          00007FF8FA542A0B    ; jump 1
 00007FF8FA5429B9  mov         rdx,0FFFF00000000h  
 00007FF8FA5429C3  and         rdx,rax  
 00007FF8FA5429C6  test        rdx,rdx  
-00007FF8FA5429C9  jg          00007FF8FA5429EB    // jump 1.1
+00007FF8FA5429C9  jg          00007FF8FA5429EB    ; jump 1.1
 00007FF8FA5429CB  mov         rdx,0FF000000000000h  
 00007FF8FA5429D5  and         rax,rdx  
 00007FF8FA5429D8  test        rax,rax  
-00007FF8FA5429DB  jg          00007FF8FA5429E4    // jump 1.1.1
+00007FF8FA5429DB  jg          00007FF8FA5429E4    ; jump 1.1.1
 00007FF8FA5429DD  mov         edx,7  
 00007FF8FA5429E2  jmp         00007FF8FA542A47  
 00007FF8FA5429E4  mov         edx,6  
@@ -38,7 +38,7 @@ When compiled using the RuyJit compiler from .Net Core, this code performs three
 00007FF8FA5429EB  mov         rdx,0FF00000000h  
 00007FF8FA5429F5  and         rax,rdx  
 00007FF8FA5429F8  test        rax,rax  
-00007FF8FA5429FB  jg          00007FF8FA542A04    // jump 1.1.2
+00007FF8FA5429FB  jg          00007FF8FA542A04    ; jump 1.1.2
 00007FF8FA5429FD  mov         edx,5  
 00007FF8FA542A02  jmp         00007FF8FA542A47  
 00007FF8FA542A04  mov         edx,4  
@@ -46,17 +46,17 @@ When compiled using the RuyJit compiler from .Net Core, this code performs three
 00007FF8FA542A0B  mov         rdx,rax  
 00007FF8FA542A0E  and         rdx,0FFFFh  
 00007FF8FA542A15  test        rdx,rdx  
-00007FF8FA542A18  jg          00007FF8FA542A33    // jump 1.2
+00007FF8FA542A18  jg          00007FF8FA542A33    ; jump 1.2
 00007FF8FA542A1A  and         rax,0FF0000h  
 00007FF8FA542A20  test        rax,rax  
-00007FF8FA542A23  jg          00007FF8FA542A2C    // jump 1.2.1
+00007FF8FA542A23  jg          00007FF8FA542A2C    ; jump 1.2.1
 00007FF8FA542A25  mov         edx,3  
 00007FF8FA542A2A  jmp         00007FF8FA542A47  
 00007FF8FA542A2C  mov         edx,2  
 00007FF8FA542A31  jmp         00007FF8FA542A47  
 00007FF8FA542A33  and         rax,0FFh  
 00007FF8FA542A39  test        rax,rax  
-00007FF8FA542A3C  jg          00007FF8FA542A45    // jump 1.2.2
+00007FF8FA542A3C  jg          00007FF8FA542A45    ; jump 1.2.2
 00007FF8FA542A3E  mov         edx,1  
 00007FF8FA542A43  jmp         00007FF8FA542A47  
 00007FF8FA542A45  xor         edx,edx  
@@ -92,32 +92,32 @@ return result;
 00007FF8FA5429AA  and         rdx,rax  
 00007FF8FA5429AD  shl         ecx,3  
 00007FF8FA5429B0  test        rdx,rdx  
-00007FF8FA5429B3  je          00007FF8FA5429BA    // jump 1  
+00007FF8FA5429B3  je          00007FF8FA5429BA    ; jump 1  
 00007FF8FA5429B5  xor         r8d,r8d  
 00007FF8FA5429B8  jmp         00007FF8FA5429C0  
 00007FF8FA5429BA  mov         r8d,4  
 00007FF8FA5429C0  add         ecx,r8d  
 00007FF8FA5429C3  test        rdx,rdx  
-00007FF8FA5429C6  je          00007FF8FA5429CA    // jump 1.1
+00007FF8FA5429C6  je          00007FF8FA5429CA    ; jump 1.1
 00007FF8FA5429C8  jmp         00007FF8FA5429CD  
 00007FF8FA5429CA  mov         rdx,rax  
 00007FF8FA5429CD  mov         rax,rdx  
 00007FF8FA5429D0  mov         rdx,0FFFF0000FFFFh  
 00007FF8FA5429DA  and         rdx,rax  
 00007FF8FA5429DD  test        rdx,rdx  
-00007FF8FA5429E0  je          00007FF8FA5429E7    // jump 1.1.1
+00007FF8FA5429E0  je          00007FF8FA5429E7    ; jump 1.1.1
 00007FF8FA5429E2  xor         r8d,r8d  
 00007FF8FA5429E5  jmp         00007FF8FA5429ED  
 00007FF8FA5429E7  mov         r8d,2  
 00007FF8FA5429ED  add         ecx,r8d  
 00007FF8FA5429F0  test        rdx,rdx  
-00007FF8FA5429F3  je          00007FF8FA5429F7    // jump 1.1.1.1
+00007FF8FA5429F3  je          00007FF8FA5429F7    ; jump 1.1.1.1
 00007FF8FA5429F5  jmp         00007FF8FA5429FA  
 00007FF8FA5429F7  mov         rdx,rax  
 00007FF8FA5429FA  mov         rax,0FF00FF00FF00FFh  
 00007FF8FA542A04  and         rax,rdx  
 00007FF8FA542A07  test        rax,rax  
-00007FF8FA542A0A  je          00007FF8FA542A10    // jump 1.1.1.1.1
+00007FF8FA542A0A  je          00007FF8FA542A10    ; jump 1.1.1.1.1
 00007FF8FA542A0C  xor         eax,eax  
 00007FF8FA542A0E  jmp         00007FF8FA542A15  
 00007FF8FA542A10  mov         eax,1  
@@ -159,21 +159,21 @@ return result;
 00007FF8FA522798  mov         edx,0FFFFFFFFh  
 00007FF8FA52279D  and         rdx,rax  
 00007FF8FA5227A0  test        rdx,rdx  
-00007FF8FA5227A3  jne         00007FF8FA5227AA    // jump 1
+00007FF8FA5227A3  jne         00007FF8FA5227AA    ; jump 1
 00007FF8FA5227A5  add         ecx,4  
 00007FF8FA5227A8  jmp         00007FF8FA5227AD  
 00007FF8FA5227AA  mov         rax,rdx  
 00007FF8FA5227AD  mov         rdx,0FFFF0000FFFFh  
 00007FF8FA5227B7  and         rdx,rax  
 00007FF8FA5227BA  test        rdx,rdx  
-00007FF8FA5227BD  jne         00007FF8FA5227C4    // jump 1.1
+00007FF8FA5227BD  jne         00007FF8FA5227C4    ; jump 1.1
 00007FF8FA5227BF  add         ecx,2  
 00007FF8FA5227C2  jmp         00007FF8FA5227C7  
 00007FF8FA5227C4  mov         rax,rdx  
 00007FF8FA5227C7  mov         rdx,0FF00FF00FF00FFh  
 00007FF8FA5227D1  and         rax,rdx  
 00007FF8FA5227D4  test        rax,rax  
-00007FF8FA5227D7  jne         00007FF8FA5227DB    // jump 1.1.1
+00007FF8FA5227D7  jne         00007FF8FA5227DB    ; jump 1.1.1
 00007FF8FA5227D9  inc         ecx  
 00007FF8FA5227DB  mov         eax,ecx  
 00007FF8FA5227DD  add         rsp,30h  
@@ -269,33 +269,33 @@ Generated machine code:
 
 ```asm
 00007FF66E6B1119  test        edx,edx  
-00007FF66E6B111B  je          old+31h (07FF66E6B1141h)    // jump 1
+00007FF66E6B111B  je          old+31h (07FF66E6B1141h)    ; jump 1
 00007FF66E6B111D  test        dx,dx  
-00007FF66E6B1120  je          old+1Ch (07FF66E6B112Ch)    // jump 1.1
+00007FF66E6B1120  je          old+1Ch (07FF66E6B112Ch)    ; jump 1.1
 00007FF66E6B1122  xor         ecx,ecx  
 00007FF66E6B1124  test        dl,dl  
-00007FF66E6B1126  sete        cl    // cmov
+00007FF66E6B1126  sete        cl                          ; cmov
 00007FF66E6B1129  mov         eax,ecx  
 00007FF66E6B112B  ret  
 00007FF66E6B112C  test        rdx,0FF0000h  
 00007FF66E6B1133  mov         ecx,0  
-00007FF66E6B1138  setbe       cl    // cmov
+00007FF66E6B1138  setbe       cl                          ; cmov
 00007FF66E6B113B  add         ecx,2  
 00007FF66E6B113E  mov         eax,ecx  
 00007FF66E6B1140  ret  
 00007FF66E6B1141  mov         rax,0FFFF00000000h  
 00007FF66E6B114B  mov         ecx,0  
 00007FF66E6B1150  test        rax,rdx  
-00007FF66E6B1153  jbe         old+5Bh (07FF66E6B116Bh)    // jump 1.2
+00007FF66E6B1153  jbe         old+5Bh (07FF66E6B116Bh)    ; jump 1.2
 00007FF66E6B1155  mov         rax,0FF00000000h  
 00007FF66E6B115F  test        rax,rdx  
-00007FF66E6B1162  setbe       cl    // cmov
+00007FF66E6B1162  setbe       cl                          ; cmov
 00007FF66E6B1165  add         ecx,4  
 00007FF66E6B1168  mov         eax,ecx  
 00007FF66E6B116A  ret  
 00007FF66E6B116B  mov         rax,0FF000000000000h  
 00007FF66E6B1175  test        rax,rdx  
-00007FF66E6B1178  setbe       cl    // cmov
+00007FF66E6B1178  setbe       cl                          ; cmov
 00007FF66E6B117B  add         ecx,6  
 00007FF66E6B117E  mov         eax,ecx  
 00007FF66E6B1180  ret  
@@ -308,24 +308,24 @@ Generated machine code:
 00007FF76BC2111B  mov         ecx,edx  
 00007FF76BC2111D  mov         r9d,edx  
 00007FF76BC21120  mov         rax,0FFFF0000FFFFh  
-00007FF76BC2112A  cmove       rcx,rdx    // cmov
+00007FF76BC2112A  cmove       rcx,rdx               ; cmov
 00007FF76BC2112E  mov         r10d,2  
 00007FF76BC21134  mov         r8,rcx  
 00007FF76BC21137  mov         edx,0  
 00007FF76BC2113C  and         r8,rax  
 00007FF76BC2113F  mov         rax,r8  
-00007FF76BC21142  cmove       rax,rcx    // cmov
+00007FF76BC21142  cmove       rax,rcx               ; cmov
 00007FF76BC21146  mov         rcx,0FF00FF00FF00FFh  
 00007FF76BC21150  test        rcx,rax  
 00007FF76BC21153  mov         eax,edx  
 00007FF76BC21155  mov         ecx,edx  
-00007FF76BC21157  sete        al    // cmov
+00007FF76BC21157  sete        al                    ; cmov
 00007FF76BC2115A  test        r8,r8  
-00007FF76BC2115D  cmove       ecx,r10d    // cmov
+00007FF76BC2115D  cmove       ecx,r10d              ; cmov
 00007FF76BC21161  add         eax,ecx  
 00007FF76BC21163  mov         ecx,4  
 00007FF76BC21168  test        r9,r9  
-00007FF76BC2116B  cmove       edx,ecx    // cmov
+00007FF76BC2116B  cmove       edx,ecx               ; cmov
 00007FF76BC2116E  add         eax,edx  
 00007FF76BC21170  ret  
 ```
@@ -336,21 +336,21 @@ Generated machine code:
 00007FF71667111C  test        r8d,r8d  
 00007FF71667111F  mov         eax,r8d  
 00007FF716671122  mov         edx,4  
-00007FF716671127  cmovne      r8,rax    // cmov
+00007FF716671127  cmovne      r8,rax                ; cmov
 00007FF71667112B  xor         ecx,ecx  
 00007FF71667112D  test        rax,rax  
 00007FF716671130  mov         rax,r8  
-00007FF716671133  cmovne      edx,ecx    // cmov
+00007FF716671133  cmovne      edx,ecx               ; cmov
 00007FF716671136  mov         rcx,0FFFF0000FFFFh  
 00007FF716671140  and         rax,rcx  
-00007FF716671143  cmovne      r8,rax    // cmov
+00007FF716671143  cmovne      r8,rax                ; cmov
 00007FF716671147  test        rax,rax  
 00007FF71667114A  mov         rax,0FF00FF00FF00FFh  
 00007FF716671154  lea         ecx,[rdx+2]  
-00007FF716671157  cmovne      ecx,edx    // cmov
+00007FF716671157  cmovne      ecx,edx               ; cmov
 00007FF71667115A  test        rax,r8  
 00007FF71667115D  lea         eax,[rcx+1]  
-00007FF716671160  cmovne      eax,ecx    // cmov
+00007FF716671160  cmovne      eax,ecx               ; cmov
 00007FF716671163  ret  
 ```
 
