@@ -1,0 +1,2403 @@
+// ***** BenchmarkRunner: Start   *****
+// Found benchmarks:
+//   FindFirstEqualByte_RunOld
+//   FindFirstEqualByte_RunTernary
+//   FindFirstEqualByte_RunIfs
+
+// Validating benchmarks:
+// **************************
+// Benchmark: FindFirstEqualByte_RunOld
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = E:\Users\Svick\git\peva\BDN.Auto\binaries
+
+// *** Build ***
+E:\Users\Svick\git\peva\BDN.Auto\BDN.Auto.notcs(58,30): warning CS0169: The field 'Program.value' is never used
+// Result = Success
+
+// *** Execute ***
+// Launch: 1
+
+// Benchmark Process Environment Information:
+// CLR=CORE, Arch=64-bit ? [RyuJIT]
+// GC=Concurrent Workstation
+
+Pilot 1: 4 op, 743161.05 ns, 185.7903 us/op
+Pilot 2: 8 op, 138953.15 ns, 17.3691 us/op
+Pilot 3: 16 op, 194681.06 ns, 12.1676 us/op
+Pilot 4: 32 op, 337667.16 ns, 10.5521 us/op
+Pilot 5: 64 op, 641237.63 ns, 10.0193 us/op
+Pilot 6: 128 op, 1204016.22 ns, 9.4064 us/op
+Pilot 7: 256 op, 2261380.04 ns, 8.8335 us/op
+Pilot 8: 512 op, 4564922.65 ns, 8.9159 us/op
+Pilot 9: 1024 op, 9909302.82 ns, 9.6771 us/op
+Pilot 10: 2048 op, 20243530.98 ns, 9.8845 us/op
+Pilot 11: 4096 op, 39170490.02 ns, 9.5631 us/op
+Pilot 12: 8192 op, 77057771.51 ns, 9.4065 us/op
+Pilot 13: 16384 op, 163183794.32 ns, 9.9599 us/op
+Pilot 14: 32768 op, 398135608.01 ns, 12.1501 us/op
+
+IdleWarmup 1: 32768 op, 184048.76 ns, 5.6167 ns/op
+IdleWarmup 2: 32768 op, 176716.14 ns, 5.3929 ns/op
+IdleWarmup 3: 32768 op, 180015.82 ns, 5.4936 ns/op
+IdleWarmup 4: 32768 op, 177816.04 ns, 5.4265 ns/op
+IdleWarmup 5: 32768 op, 176716.14 ns, 5.3929 ns/op
+IdleWarmup 6: 32768 op, 175982.88 ns, 5.3706 ns/op
+IdleWarmup 7: 32768 op, 175982.88 ns, 5.3706 ns/op
+IdleWarmup 8: 32768 op, 178549.3 ns, 5.4489 ns/op
+
+IdleTarget 1: 32768 op, 177449.41 ns, 5.4153 ns/op
+IdleTarget 2: 32768 op, 153251.76 ns, 4.6769 ns/op
+IdleTarget 3: 32768 op, 153251.76 ns, 4.6769 ns/op
+IdleTarget 4: 32768 op, 149585.45 ns, 4.5650 ns/op
+IdleTarget 5: 32768 op, 149585.45 ns, 4.5650 ns/op
+IdleTarget 6: 32768 op, 142619.46 ns, 4.3524 ns/op
+IdleTarget 7: 32768 op, 145919.14 ns, 4.4531 ns/op
+IdleTarget 8: 32768 op, 150685.34 ns, 4.5986 ns/op
+IdleTarget 9: 32768 op, 146285.77 ns, 4.4643 ns/op
+IdleTarget 10: 32768 op, 147385.66 ns, 4.4979 ns/op
+
+MainWarmup 1: 32768 op, 370724440.87 ns, 11.3136 us/op
+MainWarmup 2: 32768 op, 323519965.62 ns, 9.8730 us/op
+MainWarmup 3: 32768 op, 423374119.81 ns, 12.9204 us/op
+MainWarmup 4: 32768 op, 365548710.96 ns, 11.1557 us/op
+MainWarmup 5: 32768 op, 315055922.23 ns, 9.6147 us/op
+MainWarmup 6: 32768 op, 287597459.69 ns, 8.7768 us/op
+MainWarmup 7: 32768 op, 369400902.94 ns, 11.2732 us/op
+MainWarmup 8: 32768 op, 337954228.32 ns, 10.3135 us/op
+
+MainTarget 1: 32768 op, 336093575.96 ns, 10.2568 us/op
+MainTarget 2: 32768 op, 407120634.07 ns, 12.4243 us/op
+MainTarget 3: 32768 op, 287284723.44 ns, 8.7672 us/op
+MainTarget 4: 32768 op, 298515364.41 ns, 9.1100 us/op
+MainTarget 5: 32768 op, 492960684.69 ns, 15.0440 us/op
+MainTarget 6: 32768 op, 397353584.07 ns, 12.1263 us/op
+MainTarget 7: 32768 op, 420412107.92 ns, 12.8300 us/op
+MainTarget 8: 32768 op, 346365476.85 ns, 10.5702 us/op
+MainTarget 9: 32768 op, 318950643.4 ns, 9.7336 us/op
+MainTarget 10: 32768 op, 380248781.14 ns, 11.6043 us/op
+MainTarget 11: 32768 op, 357259550.55 ns, 10.9027 us/op
+MainTarget 12: 32768 op, 381531623.02 ns, 11.6434 us/op
+MainTarget 13: 32768 op, 314473345.56 ns, 9.5970 us/op
+MainTarget 14: 32768 op, 364830480.82 ns, 11.1337 us/op
+MainTarget 15: 32768 op, 348988355.07 ns, 10.6503 us/op
+MainTarget 16: 32768 op, 379055030.58 ns, 11.5678 us/op
+MainTarget 17: 32768 op, 383342780.19 ns, 11.6987 us/op
+MainTarget 18: 32768 op, 451017731.01 ns, 13.7640 us/op
+MainTarget 19: 32768 op, 299314986.63 ns, 9.1344 us/op
+MainTarget 20: 32768 op, 302105415.21 ns, 9.2195 us/op
+MainTarget 21: 32768 op, 314081050.38 ns, 9.5850 us/op
+MainTarget 22: 32768 op, 296531890.66 ns, 9.0494 us/op
+MainTarget 23: 32768 op, 404621310.5 ns, 12.3481 us/op
+MainTarget 24: 32768 op, 419109834.58 ns, 12.7902 us/op
+MainTarget 25: 32768 op, 409849835.27 ns, 12.5076 us/op
+MainTarget 26: 32768 op, 323379912.58 ns, 9.8688 us/op
+MainTarget 27: 32768 op, 359398475.84 ns, 10.9680 us/op
+MainTarget 28: 32768 op, 289488175.78 ns, 8.8345 us/op
+MainTarget 29: 32768 op, 315185342.97 ns, 9.6187 us/op
+MainTarget 30: 32768 op, 420809169.29 ns, 12.8421 us/op
+MainTarget 31: 32768 op, 346275285.62 ns, 10.5675 us/op
+MainTarget 32: 32768 op, 310616387.38 ns, 9.4793 us/op
+MainTarget 33: 32768 op, 337205934.44 ns, 10.2907 us/op
+MainTarget 34: 32768 op, 298146166.98 ns, 9.0987 us/op
+MainTarget 35: 32768 op, 441097795.89 ns, 13.4612 us/op
+MainTarget 36: 32768 op, 342070761.25 ns, 10.4392 us/op
+MainTarget 37: 32768 op, 322066273.69 ns, 9.8287 us/op
+MainTarget 38: 32768 op, 295374436.58 ns, 9.0141 us/op
+MainTarget 39: 32768 op, 297857628.38 ns, 9.0899 us/op
+MainTarget 40: 32768 op, 294956477.23 ns, 9.0014 us/op
+MainTarget 41: 32768 op, 297392373.64 ns, 9.0757 us/op
+MainTarget 42: 32768 op, 298718111.35 ns, 9.1162 us/op
+MainTarget 43: 32768 op, 427088091.9 ns, 13.0337 us/op
+MainTarget 44: 32768 op, 306538717.33 ns, 9.3548 us/op
+MainTarget 45: 32768 op, 297270285.51 ns, 9.0720 us/op
+MainTarget 46: 32768 op, 300256128.42 ns, 9.1631 us/op
+MainTarget 47: 32768 op, 469111337.77 ns, 14.3161 us/op
+MainTarget 48: 32768 op, 445041278.98 ns, 13.5816 us/op
+MainTarget 49: 32768 op, 315385156.87 ns, 9.6248 us/op
+MainTarget 50: 32768 op, 359812402.25 ns, 10.9806 us/op
+MainTarget 51: 32768 op, 291800517.54 ns, 8.9050 us/op
+MainTarget 52: 32768 op, 279578506.33 ns, 8.5321 us/op
+MainTarget 53: 32768 op, 286774006.45 ns, 8.7516 us/op
+MainTarget 54: 32768 op, 322733908.75 ns, 9.8491 us/op
+MainTarget 55: 32768 op, 317599974.78 ns, 9.6924 us/op
+MainTarget 56: 32768 op, 301383152.13 ns, 9.1975 us/op
+MainTarget 57: 32768 op, 333252185.67 ns, 10.1700 us/op
+MainTarget 58: 32768 op, 297987049.13 ns, 9.0938 us/op
+MainTarget 59: 32768 op, 321747671.34 ns, 9.8190 us/op
+MainTarget 60: 32768 op, 297960651.69 ns, 9.0930 us/op
+MainTarget 61: 32768 op, 318297306.95 ns, 9.7137 us/op
+MainTarget 62: 32768 op, 309108067.42 ns, 9.4332 us/op
+MainTarget 63: 32768 op, 310690813.47 ns, 9.4815 us/op
+MainTarget 64: 32768 op, 377519213.3 ns, 11.5210 us/op
+MainTarget 65: 32768 op, 405629179.14 ns, 12.3788 us/op
+MainTarget 66: 32768 op, 288921364.25 ns, 8.8172 us/op
+MainTarget 67: 32768 op, 306514519.69 ns, 9.3541 us/op
+MainTarget 68: 32768 op, 302142444.94 ns, 9.2207 us/op
+MainTarget 69: 32768 op, 317893279.58 ns, 9.7013 us/op
+MainTarget 70: 32768 op, 409272758.07 ns, 12.4900 us/op
+MainTarget 71: 32768 op, 336833070.7 ns, 10.2793 us/op
+MainTarget 72: 32768 op, 369706306.57 ns, 11.2825 us/op
+MainTarget 73: 32768 op, 301020187.44 ns, 9.1864 us/op
+MainTarget 74: 32768 op, 331387867.01 ns, 10.1132 us/op
+MainTarget 75: 32768 op, 333369874.22 ns, 10.1736 us/op
+MainTarget 76: 32768 op, 302873507.17 ns, 9.2430 us/op
+MainTarget 77: 32768 op, 328763522.27 ns, 10.0331 us/op
+MainTarget 78: 32768 op, 312233230.11 ns, 9.5286 us/op
+MainTarget 79: 32768 op, 326152376.25 ns, 9.9534 us/op
+MainTarget 80: 32768 op, 334302950.13 ns, 10.2021 us/op
+MainTarget 81: 32768 op, 331550651.17 ns, 10.1181 us/op
+MainTarget 82: 32768 op, 320289213.2 ns, 9.7745 us/op
+MainTarget 83: 32768 op, 305952107.72 ns, 9.3369 us/op
+MainTarget 84: 32768 op, 313904700.87 ns, 9.5796 us/op
+MainTarget 85: 32768 op, 311188331.75 ns, 9.4967 us/op
+MainTarget 86: 32768 op, 304740392.25 ns, 9.2999 us/op
+MainTarget 87: 32768 op, 306770794.76 ns, 9.3619 us/op
+MainTarget 88: 32768 op, 394277549.94 ns, 12.0324 us/op
+MainTarget 89: 32768 op, 285751839.2 ns, 8.7205 us/op
+MainTarget 90: 32768 op, 319801593.96 ns, 9.7596 us/op
+MainTarget 91: 32768 op, 315142447.14 ns, 9.6174 us/op
+MainTarget 92: 32768 op, 321480763.97 ns, 9.8108 us/op
+MainTarget 93: 32768 op, 346157963.7 ns, 10.5639 us/op
+MainTarget 94: 32768 op, 363289897.34 ns, 11.0867 us/op
+MainTarget 95: 32768 op, 325805909.95 ns, 9.9428 us/op
+MainTarget 96: 32768 op, 344208586.64 ns, 10.5044 us/op
+MainTarget 97: 32768 op, 370995381.18 ns, 11.3219 us/op
+MainTarget 98: 32768 op, 359440271.78 ns, 10.9692 us/op
+MainTarget 99: 32768 op, 285175128.63 ns, 8.7029 us/op
+MainTarget 100: 32768 op, 423475676.6 ns, 12.9235 us/op
+MainTarget 101: 32768 op, 298557526.97 ns, 9.1113 us/op
+MainTarget 102: 32768 op, 298568159.27 ns, 9.1116 us/op
+MainTarget 103: 32768 op, 294729532.64 ns, 8.9944 us/op
+MainTarget 104: 32768 op, 379118091.11 ns, 11.5698 us/op
+MainTarget 105: 32768 op, 339273733.31 ns, 10.3538 us/op
+MainTarget 106: 32768 op, 279380158.96 ns, 8.5260 us/op
+MainTarget 107: 32768 op, 340639067.17 ns, 10.3955 us/op
+MainTarget 108: 32768 op, 357159826.92 ns, 10.8997 us/op
+MainTarget 109: 32768 op, 328602937.89 ns, 10.0282 us/op
+MainTarget 110: 32768 op, 328763888.9 ns, 10.0331 us/op
+MainTarget 111: 32768 op, 428495954.96 ns, 13.0767 us/op
+MainTarget 112: 32768 op, 285807200.49 ns, 8.7221 us/op
+MainTarget 113: 32768 op, 414596606.9 ns, 12.6525 us/op
+MainTarget 114: 32768 op, 384322784.87 ns, 11.7286 us/op
+MainTarget 115: 32768 op, 290166443.14 ns, 8.8552 us/op
+MainTarget 116: 32768 op, 288550333.67 ns, 8.8059 us/op
+MainTarget 117: 32768 op, 335820069.23 ns, 10.2484 us/op
+MainTarget 118: 32768 op, 333663912.29 ns, 10.1826 us/op
+MainTarget 119: 32768 op, 301491674.91 ns, 9.2008 us/op
+MainTarget 120: 32768 op, 309948752.32 ns, 9.4589 us/op
+MainTarget 121: 32768 op, 308102031.94 ns, 9.4025 us/op
+MainTarget 122: 32768 op, 304943505.83 ns, 9.3061 us/op
+MainTarget 123: 32768 op, 394714207.46 ns, 12.0457 us/op
+MainTarget 124: 32768 op, 361810541.23 ns, 11.0416 us/op
+MainTarget 125: 32768 op, 301059783.59 ns, 9.1876 us/op
+MainTarget 126: 32768 op, 295925482.98 ns, 9.0309 us/op
+MainTarget 127: 32768 op, 297546725.29 ns, 9.0804 us/op
+MainTarget 128: 32768 op, 445088574.38 ns, 13.5830 us/op
+MainTarget 129: 32768 op, 309594220.14 ns, 9.4481 us/op
+MainTarget 130: 32768 op, 392370335.45 ns, 11.9742 us/op
+MainTarget 131: 32768 op, 368831891.62 ns, 11.2559 us/op
+MainTarget 132: 32768 op, 290210805.5 ns, 8.8565 us/op
+MainTarget 133: 32768 op, 330492187.46 ns, 10.0858 us/op
+MainTarget 134: 32768 op, 385606726.65 ns, 11.7678 us/op
+MainTarget 135: 32768 op, 303975233.34 ns, 9.2766 us/op
+MainTarget 136: 32768 op, 330948276.43 ns, 10.0997 us/op
+MainTarget 137: 32768 op, 345776667.46 ns, 10.5523 us/op
+MainTarget 138: 32768 op, 288170503.95 ns, 8.7943 us/op
+MainTarget 139: 32768 op, 385572629.97 ns, 11.7667 us/op
+MainTarget 140: 32768 op, 287992321.28 ns, 8.7888 us/op
+MainTarget 141: 32768 op, 290267633.3 ns, 8.8583 us/op
+MainTarget 142: 32768 op, 301861238.96 ns, 9.2121 us/op
+MainTarget 143: 32768 op, 336378814.89 ns, 10.2655 us/op
+MainTarget 144: 32768 op, 369255350.43 ns, 11.2688 us/op
+MainTarget 145: 32768 op, 318076961.71 ns, 9.7069 us/op
+MainTarget 146: 32768 op, 309799533.5 ns, 9.4543 us/op
+MainTarget 147: 32768 op, 371106837.01 ns, 11.3253 us/op
+MainTarget 148: 32768 op, 293619007.32 ns, 8.9605 us/op
+MainTarget 149: 32768 op, 300814140.81 ns, 9.1801 us/op
+MainTarget 150: 32768 op, 306511586.64 ns, 9.3540 us/op
+MainTarget 151: 32768 op, 315292399.23 ns, 9.6220 us/op
+MainTarget 152: 32768 op, 389066990.08 ns, 11.8734 us/op
+MainTarget 153: 32768 op, 304829116.95 ns, 9.3026 us/op
+MainTarget 154: 32768 op, 372064477.2 ns, 11.3545 us/op
+MainTarget 155: 32768 op, 295957013.25 ns, 9.0319 us/op
+MainTarget 156: 32768 op, 393281413.49 ns, 12.0020 us/op
+MainTarget 157: 32768 op, 316180379.52 ns, 9.6491 us/op
+MainTarget 158: 32768 op, 461619966.43 ns, 14.0875 us/op
+MainTarget 159: 32768 op, 292286303.62 ns, 8.9199 us/op
+MainTarget 160: 32768 op, 310065707.61 ns, 9.4625 us/op
+MainTarget 161: 32768 op, 373452542.18 ns, 11.3969 us/op
+MainTarget 162: 32768 op, 325945229.73 ns, 9.9471 us/op
+MainTarget 163: 32768 op, 314608999.03 ns, 9.6011 us/op
+MainTarget 164: 32768 op, 298844599.05 ns, 9.1200 us/op
+MainTarget 165: 32768 op, 302946833.37 ns, 9.2452 us/op
+MainTarget 166: 32768 op, 475517114.7 ns, 14.5116 us/op
+MainTarget 167: 32768 op, 432108736.89 ns, 13.1869 us/op
+MainTarget 168: 32768 op, 282126225.19 ns, 8.6098 us/op
+MainTarget 169: 32768 op, 314648228.55 ns, 9.6023 us/op
+MainTarget 170: 32768 op, 301170872.78 ns, 9.1910 us/op
+MainTarget 171: 32768 op, 310200994.45 ns, 9.4666 us/op
+MainTarget 172: 32768 op, 295121827.82 ns, 9.0064 us/op
+
+Result 1: 32768 op, 335943990.51 ns, 10.2522 us/op
+Result 2: 32768 op, 406971048.62 ns, 12.4198 us/op
+Result 3: 32768 op, 287135137.99 ns, 8.7627 us/op
+Result 4: 32768 op, 298365778.96 ns, 9.1054 us/op
+Result 5: 32768 op, 492811099.24 ns, 15.0394 us/op
+Result 6: 32768 op, 397203998.62 ns, 12.1217 us/op
+Result 7: 32768 op, 420262522.47 ns, 12.8254 us/op
+Result 8: 32768 op, 346215891.4 ns, 10.5657 us/op
+Result 9: 32768 op, 318801057.95 ns, 9.7290 us/op
+Result 10: 32768 op, 380099195.68 ns, 11.5997 us/op
+Result 11: 32768 op, 357109965.1 ns, 10.8981 us/op
+Result 12: 32768 op, 381382037.57 ns, 11.6389 us/op
+Result 13: 32768 op, 314323760.11 ns, 9.5924 us/op
+Result 14: 32768 op, 364680895.37 ns, 11.1292 us/op
+Result 15: 32768 op, 348838769.62 ns, 10.6457 us/op
+Result 16: 32768 op, 378905445.13 ns, 11.5633 us/op
+Result 17: 32768 op, 383193194.74 ns, 11.6941 us/op
+Result 18: 32768 op, 450868145.56 ns, 13.7594 us/op
+Result 19: 32768 op, 299165401.18 ns, 9.1298 us/op
+Result 20: 32768 op, 301955829.76 ns, 9.2150 us/op
+Result 21: 32768 op, 313931464.93 ns, 9.5804 us/op
+Result 22: 32768 op, 296382305.21 ns, 9.0449 us/op
+Result 23: 32768 op, 404471725.05 ns, 12.3435 us/op
+Result 24: 32768 op, 418960249.13 ns, 12.7857 us/op
+Result 25: 32768 op, 409700249.82 ns, 12.5031 us/op
+Result 26: 32768 op, 323230327.13 ns, 9.8642 us/op
+Result 27: 32768 op, 359248890.39 ns, 10.9634 us/op
+Result 28: 32768 op, 289338590.33 ns, 8.8299 us/op
+Result 29: 32768 op, 315035757.52 ns, 9.6141 us/op
+Result 30: 32768 op, 420659583.84 ns, 12.8375 us/op
+Result 31: 32768 op, 346125700.17 ns, 10.5629 us/op
+Result 32: 32768 op, 310466801.93 ns, 9.4747 us/op
+Result 33: 32768 op, 337056348.99 ns, 10.2861 us/op
+Result 34: 32768 op, 297996581.53 ns, 9.0941 us/op
+Result 35: 32768 op, 440948210.44 ns, 13.4567 us/op
+Result 36: 32768 op, 341921175.8 ns, 10.4346 us/op
+Result 37: 32768 op, 321916688.24 ns, 9.8241 us/op
+Result 38: 32768 op, 295224851.13 ns, 9.0095 us/op
+Result 39: 32768 op, 297708042.93 ns, 9.0853 us/op
+Result 40: 32768 op, 294806891.78 ns, 8.9968 us/op
+Result 41: 32768 op, 297242788.18 ns, 9.0711 us/op
+Result 42: 32768 op, 298568525.9 ns, 9.1116 us/op
+Result 43: 32768 op, 426938506.45 ns, 13.0291 us/op
+Result 44: 32768 op, 306389131.88 ns, 9.3503 us/op
+Result 45: 32768 op, 297120700.06 ns, 9.0674 us/op
+Result 46: 32768 op, 300106542.97 ns, 9.1585 us/op
+Result 47: 32768 op, 468961752.32 ns, 14.3116 us/op
+Result 48: 32768 op, 444891693.53 ns, 13.5770 us/op
+Result 49: 32768 op, 315235571.42 ns, 9.6202 us/op
+Result 50: 32768 op, 359662816.8 ns, 10.9760 us/op
+Result 51: 32768 op, 291650932.09 ns, 8.9005 us/op
+Result 52: 32768 op, 279428920.88 ns, 8.5275 us/op
+Result 53: 32768 op, 286624421 ns, 8.7471 us/op
+Result 54: 32768 op, 322584323.3 ns, 9.8445 us/op
+Result 55: 32768 op, 317450389.33 ns, 9.6878 us/op
+Result 56: 32768 op, 301233566.68 ns, 9.1929 us/op
+Result 57: 32768 op, 333102600.22 ns, 10.1655 us/op
+Result 58: 32768 op, 297837463.68 ns, 9.0893 us/op
+Result 59: 32768 op, 321598085.89 ns, 9.8144 us/op
+Result 60: 32768 op, 297811066.24 ns, 9.0885 us/op
+Result 61: 32768 op, 318147721.5 ns, 9.7091 us/op
+Result 62: 32768 op, 308958481.97 ns, 9.4287 us/op
+Result 63: 32768 op, 310541228.02 ns, 9.4770 us/op
+Result 64: 32768 op, 377369627.85 ns, 11.5164 us/op
+Result 65: 32768 op, 405479593.68 ns, 12.3743 us/op
+Result 66: 32768 op, 288771778.8 ns, 8.8126 us/op
+Result 67: 32768 op, 306364934.24 ns, 9.3495 us/op
+Result 68: 32768 op, 301992859.49 ns, 9.2161 us/op
+Result 69: 32768 op, 317743694.13 ns, 9.6968 us/op
+Result 70: 32768 op, 409123172.62 ns, 12.4854 us/op
+Result 71: 32768 op, 336683485.25 ns, 10.2748 us/op
+Result 72: 32768 op, 369556721.12 ns, 11.2780 us/op
+Result 73: 32768 op, 300870601.99 ns, 9.1818 us/op
+Result 74: 32768 op, 331238281.56 ns, 10.1086 us/op
+Result 75: 32768 op, 333220288.77 ns, 10.1691 us/op
+Result 76: 32768 op, 302723921.72 ns, 9.2384 us/op
+Result 77: 32768 op, 328613936.82 ns, 10.0285 us/op
+Result 78: 32768 op, 312083644.66 ns, 9.5240 us/op
+Result 79: 32768 op, 326002790.8 ns, 9.9488 us/op
+Result 80: 32768 op, 334153364.68 ns, 10.1976 us/op
+Result 81: 32768 op, 331401065.72 ns, 10.1136 us/op
+Result 82: 32768 op, 320139627.75 ns, 9.7699 us/op
+Result 83: 32768 op, 305802522.27 ns, 9.3324 us/op
+Result 84: 32768 op, 313755115.42 ns, 9.5750 us/op
+Result 85: 32768 op, 311038746.3 ns, 9.4921 us/op
+Result 86: 32768 op, 304590806.8 ns, 9.2954 us/op
+Result 87: 32768 op, 306621209.31 ns, 9.3573 us/op
+Result 88: 32768 op, 394127964.49 ns, 12.0278 us/op
+Result 89: 32768 op, 285602253.75 ns, 8.7159 us/op
+Result 90: 32768 op, 319652008.51 ns, 9.7550 us/op
+Result 91: 32768 op, 314992861.69 ns, 9.6128 us/op
+Result 92: 32768 op, 321331178.52 ns, 9.8062 us/op
+Result 93: 32768 op, 346008378.25 ns, 10.5593 us/op
+Result 94: 32768 op, 363140311.89 ns, 11.0822 us/op
+Result 95: 32768 op, 325656324.49 ns, 9.9382 us/op
+Result 96: 32768 op, 344059001.19 ns, 10.4998 us/op
+Result 97: 32768 op, 370845795.73 ns, 11.3173 us/op
+Result 98: 32768 op, 359290686.33 ns, 10.9647 us/op
+Result 99: 32768 op, 285025543.18 ns, 8.6983 us/op
+Result 100: 32768 op, 423326091.15 ns, 12.9189 us/op
+Result 101: 32768 op, 298407941.52 ns, 9.1067 us/op
+Result 102: 32768 op, 298418573.82 ns, 9.1070 us/op
+Result 103: 32768 op, 294579947.19 ns, 8.9899 us/op
+Result 104: 32768 op, 378968505.66 ns, 11.5652 us/op
+Result 105: 32768 op, 339124147.86 ns, 10.3492 us/op
+Result 106: 32768 op, 279230573.51 ns, 8.5214 us/op
+Result 107: 32768 op, 340489481.72 ns, 10.3909 us/op
+Result 108: 32768 op, 357010241.47 ns, 10.8951 us/op
+Result 109: 32768 op, 328453352.44 ns, 10.0236 us/op
+Result 110: 32768 op, 328614303.45 ns, 10.0285 us/op
+Result 111: 32768 op, 428346369.51 ns, 13.0721 us/op
+Result 112: 32768 op, 285657615.04 ns, 8.7176 us/op
+Result 113: 32768 op, 414447021.45 ns, 12.6479 us/op
+Result 114: 32768 op, 384173199.42 ns, 11.7240 us/op
+Result 115: 32768 op, 290016857.69 ns, 8.8506 us/op
+Result 116: 32768 op, 288400748.22 ns, 8.8013 us/op
+Result 117: 32768 op, 335670483.78 ns, 10.2439 us/op
+Result 118: 32768 op, 333514326.84 ns, 10.1780 us/op
+Result 119: 32768 op, 301342089.46 ns, 9.1962 us/op
+Result 120: 32768 op, 309799166.87 ns, 9.4543 us/op
+Result 121: 32768 op, 307952446.49 ns, 9.3980 us/op
+Result 122: 32768 op, 304793920.38 ns, 9.3016 us/op
+Result 123: 32768 op, 394564622.01 ns, 12.0412 us/op
+Result 124: 32768 op, 361660955.78 ns, 11.0370 us/op
+Result 125: 32768 op, 300910198.13 ns, 9.1831 us/op
+Result 126: 32768 op, 295775897.53 ns, 9.0264 us/op
+Result 127: 32768 op, 297397139.84 ns, 9.0758 us/op
+Result 128: 32768 op, 444938988.93 ns, 13.5785 us/op
+Result 129: 32768 op, 309444634.69 ns, 9.4435 us/op
+Result 130: 32768 op, 392220750 ns, 11.9696 us/op
+Result 131: 32768 op, 368682306.17 ns, 11.2513 us/op
+Result 132: 32768 op, 290061220.05 ns, 8.8520 us/op
+Result 133: 32768 op, 330342602.01 ns, 10.0813 us/op
+Result 134: 32768 op, 385457141.2 ns, 11.7632 us/op
+Result 135: 32768 op, 303825647.89 ns, 9.2720 us/op
+Result 136: 32768 op, 330798690.98 ns, 10.0952 us/op
+Result 137: 32768 op, 345627082.01 ns, 10.5477 us/op
+Result 138: 32768 op, 288020918.5 ns, 8.7897 us/op
+Result 139: 32768 op, 385423044.52 ns, 11.7622 us/op
+Result 140: 32768 op, 287842735.83 ns, 8.7843 us/op
+Result 141: 32768 op, 290118047.85 ns, 8.8537 us/op
+Result 142: 32768 op, 301711653.51 ns, 9.2075 us/op
+Result 143: 32768 op, 336229229.44 ns, 10.2609 us/op
+Result 144: 32768 op, 369105764.98 ns, 11.2642 us/op
+Result 145: 32768 op, 317927376.26 ns, 9.7024 us/op
+Result 146: 32768 op, 309649948.05 ns, 9.4498 us/op
+Result 147: 32768 op, 370957251.56 ns, 11.3207 us/op
+Result 148: 32768 op, 293469421.87 ns, 8.9560 us/op
+Result 149: 32768 op, 300664555.36 ns, 9.1756 us/op
+Result 150: 32768 op, 306362001.19 ns, 9.3494 us/op
+Result 151: 32768 op, 315142813.78 ns, 9.6174 us/op
+Result 152: 32768 op, 388917404.63 ns, 11.8688 us/op
+Result 153: 32768 op, 304679531.5 ns, 9.2981 us/op
+Result 154: 32768 op, 371914891.74 ns, 11.3499 us/op
+Result 155: 32768 op, 295807427.8 ns, 9.0273 us/op
+Result 156: 32768 op, 393131828.04 ns, 11.9974 us/op
+Result 157: 32768 op, 316030794.07 ns, 9.6445 us/op
+Result 158: 32768 op, 461470380.98 ns, 14.0830 us/op
+Result 159: 32768 op, 292136718.17 ns, 8.9153 us/op
+Result 160: 32768 op, 309916122.16 ns, 9.4579 us/op
+Result 161: 32768 op, 373302956.73 ns, 11.3923 us/op
+Result 162: 32768 op, 325795644.28 ns, 9.9425 us/op
+Result 163: 32768 op, 314459413.58 ns, 9.5965 us/op
+Result 164: 32768 op, 298695013.6 ns, 9.1154 us/op
+Result 165: 32768 op, 302797247.92 ns, 9.2406 us/op
+Result 166: 32768 op, 475367529.25 ns, 14.5071 us/op
+Result 167: 32768 op, 431959151.44 ns, 13.1823 us/op
+Result 168: 32768 op, 281976639.74 ns, 8.6052 us/op
+Result 169: 32768 op, 314498643.1 ns, 9.5977 us/op
+Result 170: 32768 op, 301021287.33 ns, 9.1864 us/op
+Result 171: 32768 op, 310051409 ns, 9.4620 us/op
+Result 172: 32768 op, 294972242.37 ns, 9.0018 us/op
+
+// Launch: 2
+
+// Benchmark Process Environment Information:
+// CLR=CORE, Arch=64-bit ? [RyuJIT]
+// GC=Concurrent Workstation
+
+Pilot 1: 4 op, 1220881.25 ns, 305.2203 us/op
+Pilot 2: 8 op, 199813.9 ns, 24.9767 us/op
+Pilot 3: 16 op, 272773.47 ns, 17.0483 us/op
+Pilot 4: 32 op, 479553.36 ns, 14.9860 us/op
+Pilot 5: 64 op, 941508.42 ns, 14.7111 us/op
+Pilot 6: 128 op, 1724998.88 ns, 13.4766 us/op
+Pilot 7: 256 op, 3289046.75 ns, 12.8478 us/op
+Pilot 8: 512 op, 6250325.39 ns, 12.2077 us/op
+Pilot 9: 1024 op, 12915310.44 ns, 12.6126 us/op
+Pilot 10: 2048 op, 31477471.62 ns, 15.3699 us/op
+Pilot 11: 4096 op, 82965663.54 ns, 20.2553 us/op
+Pilot 12: 8192 op, 111428695.04 ns, 13.6021 us/op
+Pilot 13: 16384 op, 224555258.26 ns, 13.7058 us/op
+
+IdleWarmup 1: 16384 op, 123554.65 ns, 7.5412 ns/op
+IdleWarmup 2: 16384 op, 124287.91 ns, 7.5859 ns/op
+IdleWarmup 3: 16384 op, 128320.85 ns, 7.8321 ns/op
+IdleWarmup 4: 16384 op, 116588.66 ns, 7.1160 ns/op
+IdleWarmup 5: 16384 op, 116588.66 ns, 7.1160 ns/op
+IdleWarmup 6: 16384 op, 120254.97 ns, 7.3398 ns/op
+
+IdleTarget 1: 16384 op, 127220.96 ns, 7.7650 ns/op
+IdleTarget 2: 16384 op, 97157.22 ns, 5.9300 ns/op
+IdleTarget 3: 16384 op, 91657.75 ns, 5.5943 ns/op
+IdleTarget 4: 16384 op, 89457.97 ns, 5.4601 ns/op
+IdleTarget 5: 16384 op, 89091.33 ns, 5.4377 ns/op
+IdleTarget 6: 16384 op, 89091.33 ns, 5.4377 ns/op
+IdleTarget 7: 16384 op, 89091.33 ns, 5.4377 ns/op
+IdleTarget 8: 16384 op, 91657.75 ns, 5.5943 ns/op
+IdleTarget 9: 16384 op, 89457.97 ns, 5.4601 ns/op
+IdleTarget 10: 16384 op, 89091.33 ns, 5.4377 ns/op
+
+MainWarmup 1: 16384 op, 146527014.47 ns, 8.9433 us/op
+MainWarmup 2: 16384 op, 141771077.07 ns, 8.6530 us/op
+MainWarmup 3: 16384 op, 144671128.32 ns, 8.8300 us/op
+MainWarmup 4: 16384 op, 148856221.25 ns, 9.0855 us/op
+MainWarmup 5: 16384 op, 150891023.33 ns, 9.2097 us/op
+MainWarmup 6: 16384 op, 264872203.43 ns, 16.1665 us/op
+MainWarmup 7: 16384 op, 188074739.93 ns, 11.4792 us/op
+MainWarmup 8: 16384 op, 215729716.69 ns, 13.1671 us/op
+MainWarmup 9: 16384 op, 230673596.48 ns, 14.0792 us/op
+MainWarmup 10: 16384 op, 173031503.14 ns, 10.5610 us/op
+
+MainTarget 1: 16384 op, 169106351.59 ns, 10.3214 us/op
+MainTarget 2: 16384 op, 168440916.31 ns, 10.2808 us/op
+MainTarget 3: 16384 op, 173578516.6 ns, 10.5944 us/op
+MainTarget 4: 16384 op, 170858114.53 ns, 10.4284 us/op
+MainTarget 5: 16384 op, 160361835.47 ns, 9.7877 us/op
+MainTarget 6: 16384 op, 133922973.76 ns, 8.1740 us/op
+MainTarget 7: 16384 op, 138674878.22 ns, 8.4640 us/op
+MainTarget 8: 16384 op, 145729225.4 ns, 8.8946 us/op
+MainTarget 9: 16384 op, 215368951.78 ns, 13.1451 us/op
+MainTarget 10: 16384 op, 200574290.81 ns, 12.2421 us/op
+MainTarget 11: 16384 op, 174567687.05 ns, 10.6548 us/op
+MainTarget 12: 16384 op, 165890631.04 ns, 10.1252 us/op
+MainTarget 13: 16384 op, 150575720.67 ns, 9.1904 us/op
+MainTarget 14: 16384 op, 136342005.13 ns, 8.3217 us/op
+MainTarget 15: 16384 op, 188712311.25 ns, 11.5181 us/op
+MainTarget 16: 16384 op, 180058352.99 ns, 10.9899 us/op
+MainTarget 17: 16384 op, 187491063.37 ns, 11.4435 us/op
+MainTarget 18: 16384 op, 152137935.38 ns, 9.2858 us/op
+MainTarget 19: 16384 op, 204105314.02 ns, 12.4576 us/op
+MainTarget 20: 16384 op, 152307318.91 ns, 9.2961 us/op
+MainTarget 21: 16384 op, 185945713.68 ns, 11.3492 us/op
+MainTarget 22: 16384 op, 144348493.04 ns, 8.8103 us/op
+MainTarget 23: 16384 op, 187462099.52 ns, 11.4418 us/op
+MainTarget 24: 16384 op, 157423287.96 ns, 9.6084 us/op
+MainTarget 25: 16384 op, 187675112.13 ns, 11.4548 us/op
+MainTarget 26: 16384 op, 187590053.74 ns, 11.4496 us/op
+MainTarget 27: 16384 op, 184028233.52 ns, 11.2322 us/op
+MainTarget 28: 16384 op, 166074679.8 ns, 10.1364 us/op
+MainTarget 29: 16384 op, 181832847.06 ns, 11.0982 us/op
+MainTarget 30: 16384 op, 160482823.7 ns, 9.7951 us/op
+MainTarget 31: 16384 op, 185520421.71 ns, 11.3233 us/op
+MainTarget 32: 16384 op, 177702382.15 ns, 10.8461 us/op
+MainTarget 33: 16384 op, 188132301 ns, 11.4827 us/op
+MainTarget 34: 16384 op, 183463255.14 ns, 11.1977 us/op
+MainTarget 35: 16384 op, 155947598.16 ns, 9.5183 us/op
+MainTarget 36: 16384 op, 132081752.85 ns, 8.0616 us/op
+MainTarget 37: 16384 op, 185704470.48 ns, 11.3345 us/op
+MainTarget 38: 16384 op, 182236141.16 ns, 11.1228 us/op
+MainTarget 39: 16384 op, 186248184.26 ns, 11.3677 us/op
+MainTarget 40: 16384 op, 164278921.14 ns, 10.0268 us/op
+MainTarget 41: 16384 op, 174375939.03 ns, 10.6431 us/op
+MainTarget 42: 16384 op, 178767445.22 ns, 10.9111 us/op
+MainTarget 43: 16384 op, 173423065.05 ns, 10.5849 us/op
+MainTarget 44: 16384 op, 176173530.85 ns, 10.7528 us/op
+MainTarget 45: 16384 op, 163975350.66 ns, 10.0083 us/op
+MainTarget 46: 16384 op, 143754550.81 ns, 8.7741 us/op
+MainTarget 47: 16384 op, 181237071.67 ns, 11.0618 us/op
+MainTarget 48: 16384 op, 149837325.82 ns, 9.1453 us/op
+MainTarget 49: 16384 op, 128129103.98 ns, 7.8204 us/op
+MainTarget 50: 16384 op, 134069992.79 ns, 8.1830 us/op
+MainTarget 51: 16384 op, 135512319.17 ns, 8.2710 us/op
+MainTarget 52: 16384 op, 188951354.66 ns, 11.5327 us/op
+MainTarget 53: 16384 op, 180104181.87 ns, 10.9927 us/op
+MainTarget 54: 16384 op, 165040780.37 ns, 10.0733 us/op
+MainTarget 55: 16384 op, 192175507.73 ns, 11.7295 us/op
+MainTarget 56: 16384 op, 143160975.21 ns, 8.7379 us/op
+MainTarget 57: 16384 op, 136652908.23 ns, 8.3406 us/op
+MainTarget 58: 16384 op, 198360206.16 ns, 12.1069 us/op
+MainTarget 59: 16384 op, 174456231.22 ns, 10.6480 us/op
+MainTarget 60: 16384 op, 185584215.51 ns, 11.3272 us/op
+MainTarget 61: 16384 op, 198792464.12 ns, 12.1333 us/op
+MainTarget 62: 16384 op, 143947765.35 ns, 8.7859 us/op
+MainTarget 63: 16384 op, 133937272.37 ns, 8.1749 us/op
+MainTarget 64: 16384 op, 202735213.95 ns, 12.3740 us/op
+MainTarget 65: 16384 op, 196986439.79 ns, 12.0231 us/op
+MainTarget 66: 16384 op, 182760056.87 ns, 11.1548 us/op
+MainTarget 67: 16384 op, 136310841.5 ns, 8.3198 us/op
+MainTarget 68: 16384 op, 136893784.8 ns, 8.3553 us/op
+MainTarget 69: 16384 op, 144017058.61 ns, 8.7901 us/op
+MainTarget 70: 16384 op, 205864042.96 ns, 12.5649 us/op
+MainTarget 71: 16384 op, 207323234.36 ns, 12.6540 us/op
+MainTarget 72: 16384 op, 192920868.56 ns, 11.7750 us/op
+MainTarget 73: 16384 op, 157671497.15 ns, 9.6235 us/op
+MainTarget 74: 16384 op, 178285692.08 ns, 10.8817 us/op
+MainTarget 75: 16384 op, 186443965.22 ns, 11.3796 us/op
+MainTarget 76: 16384 op, 155689856.57 ns, 9.5026 us/op
+MainTarget 77: 16384 op, 139251955.43 ns, 8.4993 us/op
+MainTarget 78: 16384 op, 172822890.09 ns, 10.5483 us/op
+MainTarget 79: 16384 op, 200006012.75 ns, 12.2074 us/op
+MainTarget 80: 16384 op, 185103928.89 ns, 11.2978 us/op
+MainTarget 81: 16384 op, 196853352.73 ns, 12.0150 us/op
+MainTarget 82: 16384 op, 186509225.54 ns, 11.3836 us/op
+MainTarget 83: 16384 op, 172392465.29 ns, 10.5220 us/op
+MainTarget 84: 16384 op, 181378591.24 ns, 11.0705 us/op
+MainTarget 85: 16384 op, 142783345.27 ns, 8.7148 us/op
+MainTarget 86: 16384 op, 182645301.37 ns, 11.1478 us/op
+MainTarget 87: 16384 op, 147080993.92 ns, 8.9771 us/op
+MainTarget 88: 16384 op, 177321452.53 ns, 10.8228 us/op
+MainTarget 89: 16384 op, 180323427.21 ns, 11.0061 us/op
+MainTarget 90: 16384 op, 186275681.59 ns, 11.3694 us/op
+MainTarget 91: 16384 op, 173452762.16 ns, 10.5867 us/op
+MainTarget 92: 16384 op, 141092809.71 ns, 8.6116 us/op
+MainTarget 93: 16384 op, 182609738.16 ns, 11.1456 us/op
+MainTarget 94: 16384 op, 142771613.08 ns, 8.7141 us/op
+MainTarget 95: 16384 op, 133247272.82 ns, 8.1328 us/op
+MainTarget 96: 16384 op, 209904316.64 ns, 12.8115 us/op
+MainTarget 97: 16384 op, 180746886.02 ns, 11.0319 us/op
+MainTarget 98: 16384 op, 184420528.7 ns, 11.2561 us/op
+MainTarget 99: 16384 op, 174151927.49 ns, 10.6294 us/op
+MainTarget 100: 16384 op, 128341016.7 ns, 7.8333 us/op
+MainTarget 101: 16384 op, 178145272.4 ns, 10.8731 us/op
+MainTarget 102: 16384 op, 178287525.23 ns, 10.8818 us/op
+MainTarget 103: 16384 op, 133146815.92 ns, 8.1266 us/op
+MainTarget 104: 16384 op, 136653274.86 ns, 8.3407 us/op
+MainTarget 105: 16384 op, 140207395.83 ns, 8.5576 us/op
+MainTarget 106: 16384 op, 137048136.45 ns, 8.3648 us/op
+MainTarget 107: 16384 op, 197690371.32 ns, 12.0661 us/op
+MainTarget 108: 16384 op, 191537203.15 ns, 11.6905 us/op
+MainTarget 109: 16384 op, 197391567.05 ns, 12.0478 us/op
+MainTarget 110: 16384 op, 155405350.91 ns, 9.4852 us/op
+MainTarget 111: 16384 op, 175948786.05 ns, 10.7391 us/op
+MainTarget 112: 16384 op, 196584612.2 ns, 11.9986 us/op
+MainTarget 113: 16384 op, 135814056.49 ns, 8.2894 us/op
+MainTarget 114: 16384 op, 136862254.53 ns, 8.3534 us/op
+MainTarget 115: 16384 op, 140344149.19 ns, 8.5659 us/op
+MainTarget 116: 16384 op, 176956288.05 ns, 10.8006 us/op
+MainTarget 117: 16384 op, 197074431.23 ns, 12.0285 us/op
+MainTarget 118: 16384 op, 224506496.33 ns, 13.7028 us/op
+MainTarget 119: 16384 op, 206806651.27 ns, 12.6225 us/op
+MainTarget 120: 16384 op, 175931187.76 ns, 10.7380 us/op
+MainTarget 121: 16384 op, 162288481.41 ns, 9.9053 us/op
+MainTarget 122: 16384 op, 196237046.01 ns, 11.9774 us/op
+MainTarget 123: 16384 op, 186560553.88 ns, 11.3868 us/op
+MainTarget 124: 16384 op, 187559256.74 ns, 11.4477 us/op
+MainTarget 125: 16384 op, 190570397.19 ns, 11.6315 us/op
+MainTarget 126: 16384 op, 173979610.92 ns, 10.6189 us/op
+MainTarget 127: 16384 op, 129385181.8 ns, 7.8970 us/op
+MainTarget 128: 16384 op, 157397257.16 ns, 9.6068 us/op
+MainTarget 129: 16384 op, 150304780.36 ns, 9.1739 us/op
+MainTarget 130: 16384 op, 135257510.62 ns, 8.2555 us/op
+MainTarget 131: 16384 op, 178171303.2 ns, 10.8747 us/op
+MainTarget 132: 16384 op, 196542449.64 ns, 11.9960 us/op
+MainTarget 133: 16384 op, 175380507.99 ns, 10.7044 us/op
+MainTarget 134: 16384 op, 182572708.43 ns, 11.1434 us/op
+MainTarget 135: 16384 op, 175878026.26 ns, 10.7347 us/op
+MainTarget 136: 16384 op, 187506461.87 ns, 11.4445 us/op
+MainTarget 137: 16384 op, 183340067.12 ns, 11.1902 us/op
+MainTarget 138: 16384 op, 185562584.28 ns, 11.3258 us/op
+MainTarget 139: 16384 op, 161095830.75 ns, 9.8325 us/op
+MainTarget 140: 16384 op, 125204855.07 ns, 7.6419 us/op
+MainTarget 141: 16384 op, 131242167.85 ns, 8.0104 us/op
+MainTarget 142: 16384 op, 221127991.62 ns, 13.4966 us/op
+MainTarget 143: 16384 op, 151925289.4 ns, 9.2728 us/op
+MainTarget 144: 16384 op, 138255452.35 ns, 8.4384 us/op
+MainTarget 145: 16384 op, 179143242 ns, 10.9340 us/op
+MainTarget 146: 16384 op, 142373818.44 ns, 8.6898 us/op
+MainTarget 147: 16384 op, 184514019.6 ns, 11.2618 us/op
+MainTarget 148: 16384 op, 193708025.33 ns, 11.8230 us/op
+MainTarget 149: 16384 op, 144702291.96 ns, 8.8319 us/op
+MainTarget 150: 16384 op, 135477489.22 ns, 8.2689 us/op
+MainTarget 151: 16384 op, 159684301.37 ns, 9.7464 us/op
+MainTarget 152: 16384 op, 199035173.85 ns, 12.1481 us/op
+MainTarget 153: 16384 op, 135092160.04 ns, 8.2454 us/op
+MainTarget 154: 16384 op, 220546148.21 ns, 13.4611 us/op
+MainTarget 155: 16384 op, 153371648.72 ns, 9.3611 us/op
+MainTarget 156: 16384 op, 170290936.37 ns, 10.3937 us/op
+MainTarget 157: 16384 op, 196900648.13 ns, 12.0179 us/op
+MainTarget 158: 16384 op, 197168288.76 ns, 12.0342 us/op
+MainTarget 159: 16384 op, 182358595.92 ns, 11.1303 us/op
+MainTarget 160: 16384 op, 149314876.64 ns, 9.1135 us/op
+MainTarget 161: 16384 op, 140265690.16 ns, 8.5611 us/op
+MainTarget 162: 16384 op, 173114361.74 ns, 10.5661 us/op
+MainTarget 163: 16384 op, 152112637.84 ns, 9.2842 us/op
+MainTarget 164: 16384 op, 142561900.15 ns, 8.7013 us/op
+MainTarget 165: 16384 op, 145402923.81 ns, 8.8747 us/op
+MainTarget 166: 16384 op, 148497656.13 ns, 9.0636 us/op
+MainTarget 167: 16384 op, 147864851.01 ns, 9.0250 us/op
+MainTarget 168: 16384 op, 146294203.78 ns, 8.9291 us/op
+MainTarget 169: 16384 op, 136276378.18 ns, 8.3177 us/op
+MainTarget 170: 16384 op, 181530009.85 ns, 11.0797 us/op
+MainTarget 171: 16384 op, 202146037.93 ns, 12.3380 us/op
+MainTarget 172: 16384 op, 141154770.35 ns, 8.6154 us/op
+MainTarget 173: 16384 op, 139062407.2 ns, 8.4877 us/op
+MainTarget 174: 16384 op, 151777537.1 ns, 9.2638 us/op
+MainTarget 175: 16384 op, 156563538.25 ns, 9.5559 us/op
+MainTarget 176: 16384 op, 190759212.15 ns, 11.6430 us/op
+MainTarget 177: 16384 op, 190206699.23 ns, 11.6093 us/op
+MainTarget 178: 16384 op, 191458744.11 ns, 11.6857 us/op
+MainTarget 179: 16384 op, 176571325.5 ns, 10.7771 us/op
+MainTarget 180: 16384 op, 152759741.57 ns, 9.3237 us/op
+MainTarget 181: 16384 op, 187256786.16 ns, 11.4292 us/op
+MainTarget 182: 16384 op, 188384543.13 ns, 11.4981 us/op
+MainTarget 183: 16384 op, 181038357.67 ns, 11.0497 us/op
+MainTarget 184: 16384 op, 183945374.91 ns, 11.2271 us/op
+MainTarget 185: 16384 op, 164005781.04 ns, 10.0101 us/op
+MainTarget 186: 16384 op, 136247414.33 ns, 8.3159 us/op
+MainTarget 187: 16384 op, 206643500.48 ns, 12.6125 us/op
+MainTarget 188: 16384 op, 167663658.58 ns, 10.2334 us/op
+MainTarget 189: 16384 op, 179934065.08 ns, 10.9823 us/op
+MainTarget 190: 16384 op, 181534042.79 ns, 11.0800 us/op
+MainTarget 191: 16384 op, 177750777.44 ns, 10.8490 us/op
+
+Result 1: 16384 op, 169016893.62 ns, 10.3160 us/op
+Result 2: 16384 op, 168351458.35 ns, 10.2754 us/op
+Result 3: 16384 op, 173489058.63 ns, 10.5889 us/op
+Result 4: 16384 op, 170768656.57 ns, 10.4229 us/op
+Result 5: 16384 op, 160272377.51 ns, 9.7822 us/op
+Result 6: 16384 op, 133833515.79 ns, 8.1685 us/op
+Result 7: 16384 op, 138585420.26 ns, 8.4586 us/op
+Result 8: 16384 op, 145639767.44 ns, 8.8891 us/op
+Result 9: 16384 op, 215279493.81 ns, 13.1396 us/op
+Result 10: 16384 op, 200484832.84 ns, 12.2366 us/op
+Result 11: 16384 op, 174478229.08 ns, 10.6493 us/op
+Result 12: 16384 op, 165801173.07 ns, 10.1197 us/op
+Result 13: 16384 op, 150486262.7 ns, 9.1850 us/op
+Result 14: 16384 op, 136252547.17 ns, 8.3162 us/op
+Result 15: 16384 op, 188622853.28 ns, 11.5126 us/op
+Result 16: 16384 op, 179968895.03 ns, 10.9844 us/op
+Result 17: 16384 op, 187401605.4 ns, 11.4381 us/op
+Result 18: 16384 op, 152048477.42 ns, 9.2803 us/op
+Result 19: 16384 op, 204015856.06 ns, 12.4521 us/op
+Result 20: 16384 op, 152217860.94 ns, 9.2906 us/op
+Result 21: 16384 op, 185856255.71 ns, 11.3438 us/op
+Result 22: 16384 op, 144259035.07 ns, 8.8049 us/op
+Result 23: 16384 op, 187372641.55 ns, 11.4363 us/op
+Result 24: 16384 op, 157333830 ns, 9.6029 us/op
+Result 25: 16384 op, 187585654.17 ns, 11.4493 us/op
+Result 26: 16384 op, 187500595.78 ns, 11.4441 us/op
+Result 27: 16384 op, 183938775.56 ns, 11.2267 us/op
+Result 28: 16384 op, 165985221.84 ns, 10.1309 us/op
+Result 29: 16384 op, 181743389.09 ns, 11.0927 us/op
+Result 30: 16384 op, 160393365.74 ns, 9.7896 us/op
+Result 31: 16384 op, 185430963.75 ns, 11.3178 us/op
+Result 32: 16384 op, 177612924.18 ns, 10.8406 us/op
+Result 33: 16384 op, 188042843.03 ns, 11.4772 us/op
+Result 34: 16384 op, 183373797.18 ns, 11.1922 us/op
+Result 35: 16384 op, 155858140.2 ns, 9.5128 us/op
+Result 36: 16384 op, 131992294.88 ns, 8.0562 us/op
+Result 37: 16384 op, 185615012.51 ns, 11.3290 us/op
+Result 38: 16384 op, 182146683.2 ns, 11.1174 us/op
+Result 39: 16384 op, 186158726.29 ns, 11.3622 us/op
+Result 40: 16384 op, 164189463.17 ns, 10.0213 us/op
+Result 41: 16384 op, 174286481.07 ns, 10.6376 us/op
+Result 42: 16384 op, 178677987.25 ns, 10.9056 us/op
+Result 43: 16384 op, 173333607.08 ns, 10.5794 us/op
+Result 44: 16384 op, 176084072.89 ns, 10.7473 us/op
+Result 45: 16384 op, 163885892.7 ns, 10.0028 us/op
+Result 46: 16384 op, 143665092.84 ns, 8.7686 us/op
+Result 47: 16384 op, 181147613.71 ns, 11.0564 us/op
+Result 48: 16384 op, 149747867.86 ns, 9.1399 us/op
+Result 49: 16384 op, 128039646.01 ns, 7.8149 us/op
+Result 50: 16384 op, 133980534.83 ns, 8.1775 us/op
+Result 51: 16384 op, 135422861.2 ns, 8.2656 us/op
+Result 52: 16384 op, 188861896.7 ns, 11.5272 us/op
+Result 53: 16384 op, 180014723.9 ns, 10.9872 us/op
+Result 54: 16384 op, 164951322.4 ns, 10.0678 us/op
+Result 55: 16384 op, 192086049.76 ns, 11.7240 us/op
+Result 56: 16384 op, 143071517.24 ns, 8.7324 us/op
+Result 57: 16384 op, 136563450.26 ns, 8.3352 us/op
+Result 58: 16384 op, 198270748.2 ns, 12.1015 us/op
+Result 59: 16384 op, 174366773.26 ns, 10.6425 us/op
+Result 60: 16384 op, 185494757.54 ns, 11.3217 us/op
+Result 61: 16384 op, 198703006.15 ns, 12.1279 us/op
+Result 62: 16384 op, 143858307.38 ns, 8.7804 us/op
+Result 63: 16384 op, 133847814.4 ns, 8.1694 us/op
+Result 64: 16384 op, 202645755.99 ns, 12.3685 us/op
+Result 65: 16384 op, 196896981.82 ns, 12.0176 us/op
+Result 66: 16384 op, 182670598.91 ns, 11.1493 us/op
+Result 67: 16384 op, 136221383.53 ns, 8.3143 us/op
+Result 68: 16384 op, 136804326.83 ns, 8.3499 us/op
+Result 69: 16384 op, 143927600.64 ns, 8.7846 us/op
+Result 70: 16384 op, 205774584.99 ns, 12.5595 us/op
+Result 71: 16384 op, 207233776.39 ns, 12.6485 us/op
+Result 72: 16384 op, 192831410.6 ns, 11.7695 us/op
+Result 73: 16384 op, 157582039.19 ns, 9.6180 us/op
+Result 74: 16384 op, 178196234.11 ns, 10.8762 us/op
+Result 75: 16384 op, 186354507.25 ns, 11.3742 us/op
+Result 76: 16384 op, 155600398.6 ns, 9.4971 us/op
+Result 77: 16384 op, 139162497.46 ns, 8.4938 us/op
+Result 78: 16384 op, 172733432.13 ns, 10.5428 us/op
+Result 79: 16384 op, 199916554.78 ns, 12.2019 us/op
+Result 80: 16384 op, 185014470.93 ns, 11.2924 us/op
+Result 81: 16384 op, 196763894.77 ns, 12.0095 us/op
+Result 82: 16384 op, 186419767.57 ns, 11.3782 us/op
+Result 83: 16384 op, 172303007.33 ns, 10.5165 us/op
+Result 84: 16384 op, 181289133.28 ns, 11.0650 us/op
+Result 85: 16384 op, 142693887.31 ns, 8.7093 us/op
+Result 86: 16384 op, 182555843.4 ns, 11.1423 us/op
+Result 87: 16384 op, 146991535.96 ns, 8.9717 us/op
+Result 88: 16384 op, 177231994.57 ns, 10.8174 us/op
+Result 89: 16384 op, 180233969.24 ns, 11.0006 us/op
+Result 90: 16384 op, 186186223.62 ns, 11.3639 us/op
+Result 91: 16384 op, 173363304.2 ns, 10.5813 us/op
+Result 92: 16384 op, 141003351.74 ns, 8.6062 us/op
+Result 93: 16384 op, 182520280.19 ns, 11.1402 us/op
+Result 94: 16384 op, 142682155.12 ns, 8.7086 us/op
+Result 95: 16384 op, 133157814.85 ns, 8.1273 us/op
+Result 96: 16384 op, 209814858.67 ns, 12.8061 us/op
+Result 97: 16384 op, 180657428.05 ns, 11.0265 us/op
+Result 98: 16384 op, 184331070.73 ns, 11.2507 us/op
+Result 99: 16384 op, 174062469.52 ns, 10.6239 us/op
+Result 100: 16384 op, 128251558.73 ns, 7.8279 us/op
+Result 101: 16384 op, 178055814.44 ns, 10.8677 us/op
+Result 102: 16384 op, 178198067.27 ns, 10.8763 us/op
+Result 103: 16384 op, 133057357.95 ns, 8.1212 us/op
+Result 104: 16384 op, 136563816.89 ns, 8.3352 us/op
+Result 105: 16384 op, 140117937.86 ns, 8.5521 us/op
+Result 106: 16384 op, 136958678.49 ns, 8.3593 us/op
+Result 107: 16384 op, 197600913.35 ns, 12.0606 us/op
+Result 108: 16384 op, 191447745.18 ns, 11.6850 us/op
+Result 109: 16384 op, 197302109.08 ns, 12.0424 us/op
+Result 110: 16384 op, 155315892.94 ns, 9.4797 us/op
+Result 111: 16384 op, 175859328.08 ns, 10.7336 us/op
+Result 112: 16384 op, 196495154.24 ns, 11.9931 us/op
+Result 113: 16384 op, 135724598.52 ns, 8.2840 us/op
+Result 114: 16384 op, 136772796.57 ns, 8.3479 us/op
+Result 115: 16384 op, 140254691.23 ns, 8.5605 us/op
+Result 116: 16384 op, 176866830.09 ns, 10.7951 us/op
+Result 117: 16384 op, 196984973.26 ns, 12.0230 us/op
+Result 118: 16384 op, 224417038.37 ns, 13.6973 us/op
+Result 119: 16384 op, 206717193.31 ns, 12.6170 us/op
+Result 120: 16384 op, 175841729.79 ns, 10.7325 us/op
+Result 121: 16384 op, 162199023.44 ns, 9.8998 us/op
+Result 122: 16384 op, 196147588.04 ns, 11.9719 us/op
+Result 123: 16384 op, 186471095.91 ns, 11.3813 us/op
+Result 124: 16384 op, 187469798.77 ns, 11.4422 us/op
+Result 125: 16384 op, 190480939.22 ns, 11.6260 us/op
+Result 126: 16384 op, 173890152.95 ns, 10.6134 us/op
+Result 127: 16384 op, 129295723.84 ns, 7.8916 us/op
+Result 128: 16384 op, 157307799.19 ns, 9.6013 us/op
+Result 129: 16384 op, 150215322.39 ns, 9.1684 us/op
+Result 130: 16384 op, 135168052.65 ns, 8.2500 us/op
+Result 131: 16384 op, 178081845.24 ns, 10.8693 us/op
+Result 132: 16384 op, 196452991.67 ns, 11.9905 us/op
+Result 133: 16384 op, 175291050.02 ns, 10.6989 us/op
+Result 134: 16384 op, 182483250.46 ns, 11.1379 us/op
+Result 135: 16384 op, 175788568.3 ns, 10.7293 us/op
+Result 136: 16384 op, 187417003.91 ns, 11.4390 us/op
+Result 137: 16384 op, 183250609.16 ns, 11.1847 us/op
+Result 138: 16384 op, 185473126.31 ns, 11.3204 us/op
+Result 139: 16384 op, 161006372.78 ns, 9.8270 us/op
+Result 140: 16384 op, 125115397.11 ns, 7.6364 us/op
+Result 141: 16384 op, 131152709.88 ns, 8.0049 us/op
+Result 142: 16384 op, 221038533.65 ns, 13.4911 us/op
+Result 143: 16384 op, 151835831.43 ns, 9.2673 us/op
+Result 144: 16384 op, 138165994.39 ns, 8.4330 us/op
+Result 145: 16384 op, 179053784.04 ns, 10.9286 us/op
+Result 146: 16384 op, 142284360.47 ns, 8.6843 us/op
+Result 147: 16384 op, 184424561.64 ns, 11.2564 us/op
+Result 148: 16384 op, 193618567.37 ns, 11.8175 us/op
+Result 149: 16384 op, 144612833.99 ns, 8.8265 us/op
+Result 150: 16384 op, 135388031.26 ns, 8.2634 us/op
+Result 151: 16384 op, 159594843.41 ns, 9.7409 us/op
+Result 152: 16384 op, 198945715.88 ns, 12.1427 us/op
+Result 153: 16384 op, 135002702.07 ns, 8.2399 us/op
+Result 154: 16384 op, 220456690.25 ns, 13.4556 us/op
+Result 155: 16384 op, 153282190.75 ns, 9.3556 us/op
+Result 156: 16384 op, 170201478.4 ns, 10.3883 us/op
+Result 157: 16384 op, 196811190.16 ns, 12.0124 us/op
+Result 158: 16384 op, 197078830.8 ns, 12.0287 us/op
+Result 159: 16384 op, 182269137.96 ns, 11.1248 us/op
+Result 160: 16384 op, 149225418.67 ns, 9.1080 us/op
+Result 161: 16384 op, 140176232.19 ns, 8.5557 us/op
+Result 162: 16384 op, 173024903.78 ns, 10.5606 us/op
+Result 163: 16384 op, 152023179.88 ns, 9.2788 us/op
+Result 164: 16384 op, 142472442.18 ns, 8.6958 us/op
+Result 165: 16384 op, 145313465.84 ns, 8.8692 us/op
+Result 166: 16384 op, 148408198.16 ns, 9.0581 us/op
+Result 167: 16384 op, 147775393.05 ns, 9.0195 us/op
+Result 168: 16384 op, 146204745.82 ns, 8.9236 us/op
+Result 169: 16384 op, 136186920.22 ns, 8.3122 us/op
+Result 170: 16384 op, 181440551.88 ns, 11.0743 us/op
+Result 171: 16384 op, 202056579.96 ns, 12.3326 us/op
+Result 172: 16384 op, 141065312.38 ns, 8.6099 us/op
+Result 173: 16384 op, 138972949.23 ns, 8.4822 us/op
+Result 174: 16384 op, 151688079.14 ns, 9.2583 us/op
+Result 175: 16384 op, 156474080.29 ns, 9.5504 us/op
+Result 176: 16384 op, 190669754.19 ns, 11.6376 us/op
+Result 177: 16384 op, 190117241.26 ns, 11.6038 us/op
+Result 178: 16384 op, 191369286.15 ns, 11.6803 us/op
+Result 179: 16384 op, 176481867.53 ns, 10.7716 us/op
+Result 180: 16384 op, 152670283.6 ns, 9.3183 us/op
+Result 181: 16384 op, 187167328.19 ns, 11.4238 us/op
+Result 182: 16384 op, 188295085.16 ns, 11.4926 us/op
+Result 183: 16384 op, 180948899.7 ns, 11.0442 us/op
+Result 184: 16384 op, 183855916.95 ns, 11.2217 us/op
+Result 185: 16384 op, 163916323.07 ns, 10.0047 us/op
+Result 186: 16384 op, 136157956.37 ns, 8.3104 us/op
+Result 187: 16384 op, 206554042.51 ns, 12.6071 us/op
+Result 188: 16384 op, 167574200.62 ns, 10.2279 us/op
+Result 189: 16384 op, 179844607.11 ns, 10.9768 us/op
+Result 190: 16384 op, 181444584.82 ns, 11.0745 us/op
+Result 191: 16384 op, 177661319.48 ns, 10.8436 us/op
+
+
+Mean = 10.3158 us, StdError = 0.0749 us (0.73%); N = 363, StdDev = 1.4272 us
+Min = 7.6364 us, Q1 = 9.1399 us, Median = 10.1309 us, Q3 = 11.3290 us, Max = 15.0394 us
+IQR = 2.1892 us, LowerFence = 5.8561 us, UpperFence = 14.6128 us
+ConfidenceInterval = [10.1690 us; 10.4626 us] (CI 95%)
+Skewness = 0,493365299138147, Kurtosis = 2,68470932972426
+
+
+// **************************
+// Benchmark: FindFirstEqualByte_RunTernary
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = E:\Users\Svick\git\peva\BDN.Auto\binaries
+
+// *** Build ***
+E:\Users\Svick\git\peva\BDN.Auto\BDN.Auto.notcs(58,30): warning CS0169: The field 'Program.value' is never used
+// Result = Success
+
+// *** Execute ***
+// Launch: 1
+
+// Benchmark Process Environment Information:
+// CLR=CORE, Arch=64-bit ? [RyuJIT]
+// GC=Concurrent Workstation
+
+Pilot 1: 4 op, 722996.34 ns, 180.7491 us/op
+Pilot 2: 8 op, 146652.4 ns, 18.3316 us/op
+Pilot 3: 16 op, 226577.96 ns, 14.1611 us/op
+Pilot 4: 32 op, 355632.08 ns, 11.1135 us/op
+Pilot 5: 64 op, 691099.45 ns, 10.7984 us/op
+Pilot 6: 128 op, 1412262.63 ns, 11.0333 us/op
+Pilot 7: 256 op, 2741300.03 ns, 10.7082 us/op
+Pilot 8: 512 op, 5965453.09 ns, 11.6513 us/op
+Pilot 9: 1024 op, 13651138.87 ns, 13.3312 us/op
+Pilot 10: 2048 op, 31000484.69 ns, 15.1370 us/op
+Pilot 11: 4096 op, 59240971.16 ns, 14.4631 us/op
+Pilot 12: 8192 op, 91654818.37 ns, 11.1883 us/op
+Pilot 13: 16384 op, 180773650.08 ns, 11.0335 us/op
+Pilot 14: 32768 op, 417178422.45 ns, 12.7313 us/op
+
+IdleWarmup 1: 32768 op, 207879.78 ns, 6.3440 ns/op
+IdleWarmup 2: 32768 op, 200547.16 ns, 6.1202 ns/op
+IdleWarmup 3: 32768 op, 203113.58 ns, 6.1985 ns/op
+IdleWarmup 4: 32768 op, 201647.05 ns, 6.1538 ns/op
+IdleWarmup 5: 32768 op, 199447.27 ns, 6.0866 ns/op
+IdleWarmup 6: 32768 op, 202746.95 ns, 6.1873 ns/op
+IdleWarmup 7: 32768 op, 199447.27 ns, 6.0866 ns/op
+
+IdleTarget 1: 32768 op, 202746.95 ns, 6.1873 ns/op
+IdleTarget 2: 32768 op, 178549.3 ns, 5.4489 ns/op
+IdleTarget 3: 32768 op, 168283.63 ns, 5.1356 ns/op
+IdleTarget 4: 32768 op, 170116.79 ns, 5.1916 ns/op
+IdleTarget 5: 32768 op, 167550.37 ns, 5.1132 ns/op
+IdleTarget 6: 32768 op, 169016.89 ns, 5.1580 ns/op
+IdleTarget 7: 32768 op, 169383.52 ns, 5.1692 ns/op
+IdleTarget 8: 32768 op, 166450.48 ns, 5.0797 ns/op
+IdleTarget 9: 32768 op, 166450.48 ns, 5.0797 ns/op
+IdleTarget 10: 32768 op, 166083.85 ns, 5.0685 ns/op
+
+MainWarmup 1: 32768 op, 358418837.79 ns, 10.9381 us/op
+MainWarmup 2: 32768 op, 380177288.09 ns, 11.6021 us/op
+MainWarmup 3: 32768 op, 340449152.31 ns, 10.3897 us/op
+MainWarmup 4: 32768 op, 437164945.09 ns, 13.3412 us/op
+MainWarmup 5: 32768 op, 342513284.87 ns, 10.4527 us/op
+MainWarmup 6: 32768 op, 389297967.62 ns, 11.8804 us/op
+
+MainTarget 1: 32768 op, 413007628.12 ns, 12.6040 us/op
+MainTarget 2: 32768 op, 347352080.89 ns, 10.6003 us/op
+MainTarget 3: 32768 op, 368889086.05 ns, 11.2576 us/op
+MainTarget 4: 32768 op, 373676553.73 ns, 11.4037 us/op
+MainTarget 5: 32768 op, 433894963.15 ns, 13.2414 us/op
+MainTarget 6: 32768 op, 376019325.85 ns, 11.4752 us/op
+MainTarget 7: 32768 op, 474115117.74 ns, 14.4688 us/op
+MainTarget 8: 32768 op, 502320041 ns, 15.3296 us/op
+MainTarget 9: 32768 op, 379255211.11 ns, 11.5740 us/op
+MainTarget 10: 32768 op, 366359698.75 ns, 11.1804 us/op
+MainTarget 11: 32768 op, 452267209.48 ns, 13.8021 us/op
+MainTarget 12: 32768 op, 376483114.08 ns, 11.4894 us/op
+MainTarget 13: 32768 op, 357652212.36 ns, 10.9147 us/op
+MainTarget 14: 32768 op, 366094257.9 ns, 11.1723 us/op
+MainTarget 15: 32768 op, 406947217.6 ns, 12.4190 us/op
+MainTarget 16: 32768 op, 435540769.73 ns, 13.2916 us/op
+MainTarget 17: 32768 op, 395682479.95 ns, 12.0753 us/op
+MainTarget 18: 32768 op, 336632523.54 ns, 10.2732 us/op
+MainTarget 19: 32768 op, 455364141.58 ns, 13.8966 us/op
+MainTarget 20: 32768 op, 340862712.09 ns, 10.4023 us/op
+MainTarget 21: 32768 op, 464645405.49 ns, 14.1799 us/op
+MainTarget 22: 32768 op, 332996643.86 ns, 10.1623 us/op
+MainTarget 23: 32768 op, 364303998.7 ns, 11.1177 us/op
+MainTarget 24: 32768 op, 438852914.24 ns, 13.3927 us/op
+MainTarget 25: 32768 op, 489872918.36 ns, 14.9497 us/op
+MainTarget 26: 32768 op, 420800370.15 ns, 12.8418 us/op
+MainTarget 27: 32768 op, 310565059.04 ns, 9.4777 us/op
+MainTarget 28: 32768 op, 480567456.81 ns, 14.6658 us/op
+MainTarget 29: 32768 op, 409667253.03 ns, 12.5021 us/op
+MainTarget 30: 32768 op, 399863906.57 ns, 12.2029 us/op
+MainTarget 31: 32768 op, 380650608.72 ns, 11.6165 us/op
+MainTarget 32: 32768 op, 326842009.17 ns, 9.9744 us/op
+MainTarget 33: 32768 op, 348106607.5 ns, 10.6234 us/op
+MainTarget 34: 32768 op, 399444847.33 ns, 12.1901 us/op
+MainTarget 35: 32768 op, 360573894.85 ns, 11.0038 us/op
+MainTarget 36: 32768 op, 396160566.78 ns, 12.0899 us/op
+MainTarget 37: 32768 op, 375382487.8 ns, 11.4558 us/op
+MainTarget 38: 32768 op, 331610778.66 ns, 10.1200 us/op
+MainTarget 39: 32768 op, 386701853.47 ns, 11.8012 us/op
+MainTarget 40: 32768 op, 398965293.98 ns, 12.1755 us/op
+MainTarget 41: 32768 op, 421162234.95 ns, 12.8529 us/op
+MainTarget 42: 32768 op, 324002452.03 ns, 9.8878 us/op
+MainTarget 43: 32768 op, 348814938.6 ns, 10.6450 us/op
+MainTarget 44: 32768 op, 379486188.64 ns, 11.5810 us/op
+MainTarget 45: 32768 op, 439441357 ns, 13.4107 us/op
+MainTarget 46: 32768 op, 405437431.12 ns, 12.3730 us/op
+MainTarget 47: 32768 op, 343683571.04 ns, 10.4884 us/op
+MainTarget 48: 32768 op, 381729970.4 ns, 11.6495 us/op
+MainTarget 49: 32768 op, 340765554.87 ns, 10.3993 us/op
+MainTarget 50: 32768 op, 405638344.91 ns, 12.3791 us/op
+MainTarget 51: 32768 op, 345333410.57 ns, 10.5387 us/op
+MainTarget 52: 32768 op, 417906918.25 ns, 12.7535 us/op
+MainTarget 53: 32768 op, 384059543.81 ns, 11.7206 us/op
+MainTarget 54: 32768 op, 365605538.77 ns, 11.1574 us/op
+MainTarget 55: 32768 op, 357204555.9 ns, 10.9010 us/op
+MainTarget 56: 32768 op, 329710896.79 ns, 10.0620 us/op
+MainTarget 57: 32768 op, 333972982.23 ns, 10.1920 us/op
+MainTarget 58: 32768 op, 348464072.73 ns, 10.6343 us/op
+MainTarget 59: 32768 op, 355416129.86 ns, 10.8464 us/op
+MainTarget 60: 32768 op, 404276310.72 ns, 12.3375 us/op
+MainTarget 61: 32768 op, 364660730.67 ns, 11.1286 us/op
+MainTarget 62: 32768 op, 435122077.13 ns, 13.2789 us/op
+MainTarget 63: 32768 op, 327037790.12 ns, 9.9804 us/op
+MainTarget 64: 32768 op, 484742284.07 ns, 14.7932 us/op
+MainTarget 65: 32768 op, 350653226.46 ns, 10.7011 us/op
+MainTarget 66: 32768 op, 412312862.37 ns, 12.5828 us/op
+MainTarget 67: 32768 op, 338281996.44 ns, 10.3235 us/op
+MainTarget 68: 32768 op, 335335749.68 ns, 10.2336 us/op
+MainTarget 69: 32768 op, 376825180.8 ns, 11.4998 us/op
+MainTarget 70: 32768 op, 399080416.11 ns, 12.1790 us/op
+MainTarget 71: 32768 op, 329425657.86 ns, 10.0533 us/op
+MainTarget 72: 32768 op, 483433411.38 ns, 14.7532 us/op
+MainTarget 73: 32768 op, 390989603.08 ns, 11.9321 us/op
+MainTarget 74: 32768 op, 330062495.92 ns, 10.0727 us/op
+MainTarget 75: 32768 op, 359179230.5 ns, 10.9613 us/op
+MainTarget 76: 32768 op, 357394104.13 ns, 10.9068 us/op
+MainTarget 77: 32768 op, 347303318.96 ns, 10.5989 us/op
+MainTarget 78: 32768 op, 415060761.76 ns, 12.6666 us/op
+MainTarget 79: 32768 op, 394314946.3 ns, 12.0335 us/op
+MainTarget 80: 32768 op, 342929411.07 ns, 10.4654 us/op
+MainTarget 81: 32768 op, 410431678.68 ns, 12.5254 us/op
+MainTarget 82: 32768 op, 353780222.31 ns, 10.7965 us/op
+MainTarget 83: 32768 op, 348593493.47 ns, 10.6382 us/op
+MainTarget 84: 32768 op, 413195343.2 ns, 12.6097 us/op
+MainTarget 85: 32768 op, 377024261.44 ns, 11.5059 us/op
+MainTarget 86: 32768 op, 357629481.24 ns, 10.9140 us/op
+MainTarget 87: 32768 op, 415192382.29 ns, 12.6707 us/op
+MainTarget 88: 32768 op, 362401183.78 ns, 11.0596 us/op
+MainTarget 89: 32768 op, 421742611.84 ns, 12.8706 us/op
+MainTarget 90: 32768 op, 374853072.62 ns, 11.4396 us/op
+MainTarget 91: 32768 op, 456279252.57 ns, 13.9245 us/op
+MainTarget 92: 32768 op, 435149207.82 ns, 13.2797 us/op
+MainTarget 93: 32768 op, 354263441.98 ns, 10.8113 us/op
+MainTarget 94: 32768 op, 338483643.49 ns, 10.3297 us/op
+MainTarget 95: 32768 op, 429301443.28 ns, 13.1012 us/op
+MainTarget 96: 32768 op, 347444105.27 ns, 10.6032 us/op
+MainTarget 97: 32768 op, 439497451.55 ns, 13.4124 us/op
+MainTarget 98: 32768 op, 370103001.31 ns, 11.2946 us/op
+MainTarget 99: 32768 op, 381572685.7 ns, 11.6447 us/op
+MainTarget 100: 32768 op, 374026319.71 ns, 11.4144 us/op
+MainTarget 101: 32768 op, 383534894.84 ns, 11.7046 us/op
+MainTarget 102: 32768 op, 372007649.39 ns, 11.3528 us/op
+MainTarget 103: 32768 op, 349666255.8 ns, 10.6710 us/op
+MainTarget 104: 32768 op, 419532193.5 ns, 12.8031 us/op
+MainTarget 105: 32768 op, 421985688.19 ns, 12.8780 us/op
+MainTarget 106: 32768 op, 337347454 ns, 10.2950 us/op
+MainTarget 107: 32768 op, 406593052.05 ns, 12.4082 us/op
+MainTarget 108: 32768 op, 349886601.03 ns, 10.6777 us/op
+MainTarget 109: 32768 op, 397826904.7 ns, 12.1407 us/op
+MainTarget 110: 32768 op, 347529530.29 ns, 10.6058 us/op
+MainTarget 111: 32768 op, 371164398.08 ns, 11.3270 us/op
+MainTarget 112: 32768 op, 436494376.98 ns, 13.3208 us/op
+MainTarget 113: 32768 op, 374816776.15 ns, 11.4385 us/op
+MainTarget 114: 32768 op, 418830095.13 ns, 12.7817 us/op
+MainTarget 115: 32768 op, 345678043.72 ns, 10.5493 us/op
+MainTarget 116: 32768 op, 346759971.81 ns, 10.5823 us/op
+MainTarget 117: 32768 op, 355580747.18 ns, 10.8515 us/op
+MainTarget 118: 32768 op, 357087967.24 ns, 10.8975 us/op
+MainTarget 119: 32768 op, 349555166.6 ns, 10.6676 us/op
+MainTarget 120: 32768 op, 345077135.5 ns, 10.5309 us/op
+MainTarget 121: 32768 op, 360481137.2 ns, 11.0010 us/op
+
+Result 1: 32768 op, 412838977.86 ns, 12.5988 us/op
+Result 2: 32768 op, 347183430.62 ns, 10.5952 us/op
+Result 3: 32768 op, 368720435.79 ns, 11.2525 us/op
+Result 4: 32768 op, 373507903.46 ns, 11.3986 us/op
+Result 5: 32768 op, 433726312.89 ns, 13.2363 us/op
+Result 6: 32768 op, 375850675.59 ns, 11.4701 us/op
+Result 7: 32768 op, 473946467.47 ns, 14.4637 us/op
+Result 8: 32768 op, 502151390.74 ns, 15.3244 us/op
+Result 9: 32768 op, 379086560.85 ns, 11.5688 us/op
+Result 10: 32768 op, 366191048.48 ns, 11.1753 us/op
+Result 11: 32768 op, 452098559.21 ns, 13.7970 us/op
+Result 12: 32768 op, 376314463.81 ns, 11.4842 us/op
+Result 13: 32768 op, 357483562.1 ns, 10.9095 us/op
+Result 14: 32768 op, 365925607.64 ns, 11.1672 us/op
+Result 15: 32768 op, 406778567.34 ns, 12.4139 us/op
+Result 16: 32768 op, 435372119.47 ns, 13.2865 us/op
+Result 17: 32768 op, 395513829.69 ns, 12.0701 us/op
+Result 18: 32768 op, 336463873.28 ns, 10.2681 us/op
+Result 19: 32768 op, 455195491.32 ns, 13.8915 us/op
+Result 20: 32768 op, 340694061.82 ns, 10.3972 us/op
+Result 21: 32768 op, 464476755.23 ns, 14.1747 us/op
+Result 22: 32768 op, 332827993.6 ns, 10.1571 us/op
+Result 23: 32768 op, 364135348.44 ns, 11.1125 us/op
+Result 24: 32768 op, 438684263.98 ns, 13.3876 us/op
+Result 25: 32768 op, 489704268.1 ns, 14.9446 us/op
+Result 26: 32768 op, 420631719.89 ns, 12.8367 us/op
+Result 27: 32768 op, 310396408.78 ns, 9.4725 us/op
+Result 28: 32768 op, 480398806.54 ns, 14.6606 us/op
+Result 29: 32768 op, 409498602.77 ns, 12.4969 us/op
+Result 30: 32768 op, 399695256.31 ns, 12.1977 us/op
+Result 31: 32768 op, 380481958.45 ns, 11.6114 us/op
+Result 32: 32768 op, 326673358.9 ns, 9.9693 us/op
+Result 33: 32768 op, 347937957.23 ns, 10.6182 us/op
+Result 34: 32768 op, 399276197.07 ns, 12.1849 us/op
+Result 35: 32768 op, 360405244.58 ns, 10.9987 us/op
+Result 36: 32768 op, 395991916.52 ns, 12.0847 us/op
+Result 37: 32768 op, 375213837.53 ns, 11.4506 us/op
+Result 38: 32768 op, 331442128.4 ns, 10.1148 us/op
+Result 39: 32768 op, 386533203.2 ns, 11.7961 us/op
+Result 40: 32768 op, 398796643.71 ns, 12.1703 us/op
+Result 41: 32768 op, 420993584.69 ns, 12.8477 us/op
+Result 42: 32768 op, 323833801.77 ns, 9.8826 us/op
+Result 43: 32768 op, 348646288.34 ns, 10.6398 us/op
+Result 44: 32768 op, 379317538.38 ns, 11.5759 us/op
+Result 45: 32768 op, 439272706.74 ns, 13.4055 us/op
+Result 46: 32768 op, 405268780.86 ns, 12.3678 us/op
+Result 47: 32768 op, 343514920.78 ns, 10.4832 us/op
+Result 48: 32768 op, 381561320.14 ns, 11.6443 us/op
+Result 49: 32768 op, 340596904.61 ns, 10.3942 us/op
+Result 50: 32768 op, 405469694.65 ns, 12.3740 us/op
+Result 51: 32768 op, 345164760.31 ns, 10.5336 us/op
+Result 52: 32768 op, 417738267.99 ns, 12.7484 us/op
+Result 53: 32768 op, 383890893.55 ns, 11.7154 us/op
+Result 54: 32768 op, 365436888.51 ns, 11.1522 us/op
+Result 55: 32768 op, 357035905.64 ns, 10.8959 us/op
+Result 56: 32768 op, 329542246.52 ns, 10.0568 us/op
+Result 57: 32768 op, 333804331.97 ns, 10.1869 us/op
+Result 58: 32768 op, 348295422.47 ns, 10.6291 us/op
+Result 59: 32768 op, 355247479.6 ns, 10.8413 us/op
+Result 60: 32768 op, 404107660.46 ns, 12.3324 us/op
+Result 61: 32768 op, 364492080.4 ns, 11.1234 us/op
+Result 62: 32768 op, 434953426.86 ns, 13.2737 us/op
+Result 63: 32768 op, 326869139.86 ns, 9.9753 us/op
+Result 64: 32768 op, 484573633.8 ns, 14.7880 us/op
+Result 65: 32768 op, 350484576.2 ns, 10.6959 us/op
+Result 66: 32768 op, 412144212.11 ns, 12.5776 us/op
+Result 67: 32768 op, 338113346.18 ns, 10.3184 us/op
+Result 68: 32768 op, 335167099.41 ns, 10.2285 us/op
+Result 69: 32768 op, 376656530.54 ns, 11.4946 us/op
+Result 70: 32768 op, 398911765.85 ns, 12.1738 us/op
+Result 71: 32768 op, 329257007.6 ns, 10.0481 us/op
+Result 72: 32768 op, 483264761.11 ns, 14.7481 us/op
+Result 73: 32768 op, 390820952.82 ns, 11.9269 us/op
+Result 74: 32768 op, 329893845.66 ns, 10.0676 us/op
+Result 75: 32768 op, 359010580.24 ns, 10.9561 us/op
+Result 76: 32768 op, 357225453.87 ns, 10.9017 us/op
+Result 77: 32768 op, 347134668.7 ns, 10.5937 us/op
+Result 78: 32768 op, 414892111.49 ns, 12.6615 us/op
+Result 79: 32768 op, 394146296.04 ns, 12.0284 us/op
+Result 80: 32768 op, 342760760.8 ns, 10.4602 us/op
+Result 81: 32768 op, 410263028.42 ns, 12.5202 us/op
+Result 82: 32768 op, 353611572.05 ns, 10.7914 us/op
+Result 83: 32768 op, 348424843.21 ns, 10.6331 us/op
+Result 84: 32768 op, 413026692.94 ns, 12.6046 us/op
+Result 85: 32768 op, 376855611.18 ns, 11.5007 us/op
+Result 86: 32768 op, 357460830.98 ns, 10.9088 us/op
+Result 87: 32768 op, 415023732.02 ns, 12.6655 us/op
+Result 88: 32768 op, 362232533.52 ns, 11.0545 us/op
+Result 89: 32768 op, 421573961.57 ns, 12.8654 us/op
+Result 90: 32768 op, 374684422.36 ns, 11.4345 us/op
+Result 91: 32768 op, 456110602.31 ns, 13.9194 us/op
+Result 92: 32768 op, 434980557.56 ns, 13.2746 us/op
+Result 93: 32768 op, 354094791.71 ns, 10.8061 us/op
+Result 94: 32768 op, 338314993.23 ns, 10.3246 us/op
+Result 95: 32768 op, 429132793.02 ns, 13.0961 us/op
+Result 96: 32768 op, 347275455.01 ns, 10.5980 us/op
+Result 97: 32768 op, 439328801.29 ns, 13.4073 us/op
+Result 98: 32768 op, 369934351.05 ns, 11.2895 us/op
+Result 99: 32768 op, 381404035.43 ns, 11.6395 us/op
+Result 100: 32768 op, 373857669.44 ns, 11.4092 us/op
+Result 101: 32768 op, 383366244.58 ns, 11.6994 us/op
+Result 102: 32768 op, 371838999.13 ns, 11.3476 us/op
+Result 103: 32768 op, 349497605.53 ns, 10.6658 us/op
+Result 104: 32768 op, 419363543.24 ns, 12.7980 us/op
+Result 105: 32768 op, 421817037.93 ns, 12.8728 us/op
+Result 106: 32768 op, 337178803.74 ns, 10.2899 us/op
+Result 107: 32768 op, 406424401.79 ns, 12.4031 us/op
+Result 108: 32768 op, 349717950.77 ns, 10.6725 us/op
+Result 109: 32768 op, 397658254.44 ns, 12.1356 us/op
+Result 110: 32768 op, 347360880.03 ns, 10.6006 us/op
+Result 111: 32768 op, 370995747.81 ns, 11.3219 us/op
+Result 112: 32768 op, 436325726.72 ns, 13.3156 us/op
+Result 113: 32768 op, 374648125.89 ns, 11.4334 us/op
+Result 114: 32768 op, 418661444.86 ns, 12.7765 us/op
+Result 115: 32768 op, 345509393.45 ns, 10.5441 us/op
+Result 116: 32768 op, 346591321.55 ns, 10.5771 us/op
+Result 117: 32768 op, 355412096.92 ns, 10.8463 us/op
+Result 118: 32768 op, 356919316.98 ns, 10.8923 us/op
+Result 119: 32768 op, 349386516.34 ns, 10.6624 us/op
+Result 120: 32768 op, 344908485.23 ns, 10.5258 us/op
+Result 121: 32768 op, 360312486.94 ns, 10.9959 us/op
+
+// Launch: 2
+
+// Benchmark Process Environment Information:
+// CLR=CORE, Arch=64-bit ? [RyuJIT]
+// GC=Concurrent Workstation
+
+Pilot 1: 4 op, 872948.42 ns, 218.2371 us/op
+Pilot 2: 8 op, 173783.1 ns, 21.7229 us/op
+Pilot 3: 16 op, 262507.8 ns, 16.4067 us/op
+Pilot 4: 32 op, 453889.19 ns, 14.1840 us/op
+Pilot 5: 64 op, 955807.03 ns, 14.9345 us/op
+Pilot 6: 128 op, 1764595.03 ns, 13.7859 us/op
+Pilot 7: 256 op, 3256049.96 ns, 12.7189 us/op
+Pilot 8: 512 op, 6297987.42 ns, 12.3008 us/op
+Pilot 9: 1024 op, 13522818.01 ns, 13.2059 us/op
+Pilot 10: 2048 op, 28367707.43 ns, 13.8514 us/op
+Pilot 11: 4096 op, 57277662.13 ns, 13.9838 us/op
+Pilot 12: 8192 op, 105238863.77 ns, 12.8465 us/op
+Pilot 13: 16384 op, 200263021.08 ns, 12.2231 us/op
+
+IdleWarmup 1: 16384 op, 124654.54 ns, 7.6083 ns/op
+IdleWarmup 2: 16384 op, 117321.92 ns, 7.1608 ns/op
+IdleWarmup 3: 16384 op, 116588.66 ns, 7.1160 ns/op
+IdleWarmup 4: 16384 op, 116222.03 ns, 7.0936 ns/op
+IdleWarmup 5: 16384 op, 116222.03 ns, 7.0936 ns/op
+IdleWarmup 6: 16384 op, 116588.66 ns, 7.1160 ns/op
+IdleWarmup 7: 16384 op, 110722.56 ns, 6.7580 ns/op
+IdleWarmup 8: 16384 op, 108156.15 ns, 6.6013 ns/op
+IdleWarmup 9: 16384 op, 111089.19 ns, 6.7803 ns/op
+
+IdleTarget 1: 16384 op, 108889.41 ns, 6.6461 ns/op
+IdleTarget 2: 16384 op, 91291.12 ns, 5.5720 ns/op
+IdleTarget 3: 16384 op, 86891.55 ns, 5.3034 ns/op
+IdleTarget 4: 16384 op, 83958.5 ns, 5.1244 ns/op
+IdleTarget 5: 16384 op, 83958.5 ns, 5.1244 ns/op
+IdleTarget 6: 16384 op, 87991.44 ns, 5.3706 ns/op
+IdleTarget 7: 16384 op, 85058.39 ns, 5.1916 ns/op
+IdleTarget 8: 16384 op, 83958.5 ns, 5.1244 ns/op
+IdleTarget 9: 16384 op, 83958.5 ns, 5.1244 ns/op
+IdleTarget 10: 16384 op, 83958.5 ns, 5.1244 ns/op
+
+MainWarmup 1: 16384 op, 212571557.21 ns, 12.9743 us/op
+MainWarmup 2: 16384 op, 171149586.18 ns, 10.4461 us/op
+MainWarmup 3: 16384 op, 202888099.08 ns, 12.3833 us/op
+MainWarmup 4: 16384 op, 196903581.18 ns, 12.0180 us/op
+MainWarmup 5: 16384 op, 240425981.23 ns, 14.6744 us/op
+MainWarmup 6: 16384 op, 182222209.19 ns, 11.1220 us/op
+
+MainTarget 1: 16384 op, 161541654.05 ns, 9.8597 us/op
+MainTarget 2: 16384 op, 232133521.15 ns, 14.1683 us/op
+MainTarget 3: 16384 op, 200797935.72 ns, 12.2557 us/op
+MainTarget 4: 16384 op, 205931503.06 ns, 12.5691 us/op
+MainTarget 5: 16384 op, 216536304.9 ns, 13.2163 us/op
+MainTarget 6: 16384 op, 211327944.84 ns, 12.8984 us/op
+MainTarget 7: 16384 op, 204665892.83 ns, 12.4918 us/op
+MainTarget 8: 16384 op, 194701595.36 ns, 11.8836 us/op
+MainTarget 9: 16384 op, 202465006.9 ns, 12.3575 us/op
+MainTarget 10: 16384 op, 202833837.7 ns, 12.3800 us/op
+MainTarget 11: 16384 op, 196713666.32 ns, 12.0064 us/op
+MainTarget 12: 16384 op, 200221225.15 ns, 12.2205 us/op
+MainTarget 13: 16384 op, 202911930.1 ns, 12.3848 us/op
+
+Result 1: 16384 op, 161457145.6 ns, 9.8546 us/op
+Result 2: 16384 op, 232049012.7 ns, 14.1631 us/op
+Result 3: 16384 op, 200713427.27 ns, 12.2506 us/op
+Result 4: 16384 op, 205846994.62 ns, 12.5639 us/op
+Result 5: 16384 op, 216451796.46 ns, 13.2112 us/op
+Result 6: 16384 op, 211243436.39 ns, 12.8933 us/op
+Result 7: 16384 op, 204581384.38 ns, 12.4867 us/op
+Result 8: 16384 op, 194617086.91 ns, 11.8785 us/op
+Result 9: 16384 op, 202380498.46 ns, 12.3523 us/op
+Result 10: 16384 op, 202749329.25 ns, 12.3748 us/op
+Result 11: 16384 op, 196629157.87 ns, 12.0013 us/op
+Result 12: 16384 op, 200136716.7 ns, 12.2154 us/op
+Result 13: 16384 op, 202827421.65 ns, 12.3796 us/op
+
+
+Mean = 11.7590 us, StdError = 0.1092 us (0.93%); N = 134, StdDev = 1.2640 us
+Min = 9.4725 us, Q1 = 10.6658 us, Median = 11.5348 us, Q3 = 12.5776 us, Max = 15.3244 us
+IQR = 1.9118 us, LowerFence = 7.7981 us, UpperFence = 15.4454 us
+ConfidenceInterval = [11.5449 us; 11.9730 us] (CI 95%)
+Skewness = 0,600338745082838, Kurtosis = 2,75655376362826
+
+
+// **************************
+// Benchmark: FindFirstEqualByte_RunIfs
+// *** Generate *** 
+// Result = Success
+// BinariesDirectoryPath = E:\Users\Svick\git\peva\BDN.Auto\binaries
+
+// *** Build ***
+E:\Users\Svick\git\peva\BDN.Auto\BDN.Auto.notcs(58,30): warning CS0169: The field 'Program.value' is never used
+// Result = Success
+
+// *** Execute ***
+// Launch: 1
+
+// Benchmark Process Environment Information:
+// CLR=CORE, Arch=64-bit ? [RyuJIT]
+// GC=Concurrent Workstation
+
+Pilot 1: 4 op, 993203.39 ns, 248.3008 us/op
+Pilot 2: 8 op, 175982.88 ns, 21.9979 us/op
+Pilot 3: 16 op, 335100.74 ns, 20.9438 us/op
+Pilot 4: 32 op, 447656.46 ns, 13.9893 us/op
+Pilot 5: 64 op, 860116.34 ns, 13.4393 us/op
+Pilot 6: 128 op, 1695301.77 ns, 13.2445 us/op
+Pilot 7: 256 op, 3319477.13 ns, 12.9667 us/op
+Pilot 8: 512 op, 6854166.65 ns, 13.3870 us/op
+Pilot 9: 1024 op, 13424194.27 ns, 13.1096 us/op
+Pilot 10: 2048 op, 25348501.1 ns, 12.3772 us/op
+Pilot 11: 4096 op, 52241985.26 ns, 12.7544 us/op
+Pilot 12: 8192 op, 122314336.23 ns, 14.9309 us/op
+Pilot 13: 16384 op, 257575513.16 ns, 15.7212 us/op
+
+IdleWarmup 1: 16384 op, 115855.4 ns, 7.0713 ns/op
+IdleWarmup 2: 16384 op, 109256.04 ns, 6.6685 ns/op
+IdleWarmup 3: 16384 op, 108156.15 ns, 6.6013 ns/op
+IdleWarmup 4: 16384 op, 109256.04 ns, 6.6685 ns/op
+IdleWarmup 5: 16384 op, 109989.3 ns, 6.7132 ns/op
+IdleWarmup 6: 16384 op, 109989.3 ns, 6.7132 ns/op
+IdleWarmup 7: 16384 op, 108156.15 ns, 6.6013 ns/op
+IdleWarmup 8: 16384 op, 108156.15 ns, 6.6013 ns/op
+
+IdleTarget 1: 16384 op, 118055.18 ns, 7.2055 ns/op
+IdleTarget 2: 16384 op, 92757.64 ns, 5.6615 ns/op
+IdleTarget 3: 16384 op, 91657.75 ns, 5.5943 ns/op
+IdleTarget 4: 16384 op, 89091.33 ns, 5.4377 ns/op
+IdleTarget 5: 16384 op, 84325.13 ns, 5.1468 ns/op
+IdleTarget 6: 16384 op, 84325.13 ns, 5.1468 ns/op
+IdleTarget 7: 16384 op, 85425.02 ns, 5.2139 ns/op
+IdleTarget 8: 16384 op, 88358.07 ns, 5.3929 ns/op
+IdleTarget 9: 16384 op, 84325.13 ns, 5.1468 ns/op
+IdleTarget 10: 16384 op, 83958.5 ns, 5.1244 ns/op
+
+MainWarmup 1: 16384 op, 206872644.85 ns, 12.6265 us/op
+MainWarmup 2: 16384 op, 204098348.03 ns, 12.4572 us/op
+MainWarmup 3: 16384 op, 227388216.04 ns, 13.8787 us/op
+MainWarmup 4: 16384 op, 188776471.68 ns, 11.5220 us/op
+MainWarmup 5: 16384 op, 185207318.83 ns, 11.3042 us/op
+MainWarmup 6: 16384 op, 206361927.86 ns, 12.5953 us/op
+MainWarmup 7: 16384 op, 180603166.67 ns, 11.0231 us/op
+
+MainTarget 1: 16384 op, 179245165.42 ns, 10.9403 us/op
+MainTarget 2: 16384 op, 180844776.5 ns, 11.0379 us/op
+MainTarget 3: 16384 op, 147165319.05 ns, 8.9823 us/op
+MainTarget 4: 16384 op, 142931830.83 ns, 8.7239 us/op
+MainTarget 5: 16384 op, 141401146.38 ns, 8.6304 us/op
+MainTarget 6: 16384 op, 141678319.42 ns, 8.6474 us/op
+MainTarget 7: 16384 op, 147170085.26 ns, 8.9825 us/op
+MainTarget 8: 16384 op, 180807380.14 ns, 11.0356 us/op
+MainTarget 9: 16384 op, 147178517.77 ns, 8.9831 us/op
+MainTarget 10: 16384 op, 153847169.13 ns, 9.3901 us/op
+MainTarget 11: 16384 op, 190245195.48 ns, 11.6116 us/op
+MainTarget 12: 16384 op, 181196375.63 ns, 11.0593 us/op
+MainTarget 13: 16384 op, 227164571.13 ns, 13.8650 us/op
+MainTarget 14: 16384 op, 211380006.44 ns, 12.9016 us/op
+MainTarget 15: 16384 op, 181672995.94 ns, 11.0884 us/op
+MainTarget 16: 16384 op, 176665916.3 ns, 10.7828 us/op
+MainTarget 17: 16384 op, 132948468.55 ns, 8.1145 us/op
+MainTarget 18: 16384 op, 167933132.37 ns, 10.2498 us/op
+MainTarget 19: 16384 op, 179965595.35 ns, 10.9842 us/op
+MainTarget 20: 16384 op, 175458967.02 ns, 10.7092 us/op
+MainTarget 21: 16384 op, 158933807.7 ns, 9.7005 us/op
+MainTarget 22: 16384 op, 209132191.74 ns, 12.7644 us/op
+MainTarget 23: 16384 op, 158676066.11 ns, 9.6848 us/op
+MainTarget 24: 16384 op, 177115405.91 ns, 10.8103 us/op
+MainTarget 25: 16384 op, 161004906.26 ns, 9.8270 us/op
+MainTarget 26: 16384 op, 133869812.26 ns, 8.1708 us/op
+MainTarget 27: 16384 op, 204557736.68 ns, 12.4852 us/op
+MainTarget 28: 16384 op, 175131198.91 ns, 10.6892 us/op
+MainTarget 29: 16384 op, 158538946.11 ns, 9.6764 us/op
+MainTarget 30: 16384 op, 141416911.52 ns, 8.6314 us/op
+MainTarget 31: 16384 op, 141852835.78 ns, 8.6580 us/op
+MainTarget 32: 16384 op, 144314029.72 ns, 8.8082 us/op
+MainTarget 33: 16384 op, 186372838.8 ns, 11.3753 us/op
+MainTarget 34: 16384 op, 135936511.24 ns, 8.2969 us/op
+MainTarget 35: 16384 op, 158533446.65 ns, 9.6761 us/op
+MainTarget 36: 16384 op, 205356992.28 ns, 12.5340 us/op
+MainTarget 37: 16384 op, 151492298.18 ns, 9.2464 us/op
+MainTarget 38: 16384 op, 174867957.84 ns, 10.6731 us/op
+MainTarget 39: 16384 op, 191176438.24 ns, 11.6685 us/op
+MainTarget 40: 16384 op, 189368214.12 ns, 11.5581 us/op
+MainTarget 41: 16384 op, 141793808.19 ns, 8.6544 us/op
+MainTarget 42: 16384 op, 148028735.07 ns, 9.0350 us/op
+MainTarget 43: 16384 op, 138692109.88 ns, 8.4651 us/op
+MainTarget 44: 16384 op, 210957280.89 ns, 12.8758 us/op
+MainTarget 45: 16384 op, 140365413.79 ns, 8.5672 us/op
+MainTarget 46: 16384 op, 197663607.25 ns, 12.0644 us/op
+MainTarget 47: 16384 op, 173160923.88 ns, 10.5689 us/op
+MainTarget 48: 16384 op, 145320798.46 ns, 8.8697 us/op
+MainTarget 49: 16384 op, 146449288.7 ns, 8.9386 us/op
+MainTarget 50: 16384 op, 197845822.86 ns, 12.0756 us/op
+MainTarget 51: 16384 op, 145849847 ns, 8.9020 us/op
+MainTarget 52: 16384 op, 154729649.96 ns, 9.4439 us/op
+MainTarget 53: 16384 op, 206398224.33 ns, 12.5975 us/op
+MainTarget 54: 16384 op, 190306789.49 ns, 11.6154 us/op
+MainTarget 55: 16384 op, 164825201.34 ns, 10.0601 us/op
+MainTarget 56: 16384 op, 140719945.97 ns, 8.5889 us/op
+MainTarget 57: 16384 op, 184277909.24 ns, 11.2474 us/op
+MainTarget 58: 16384 op, 174525524.48 ns, 10.6522 us/op
+MainTarget 59: 16384 op, 138256918.88 ns, 8.4385 us/op
+MainTarget 60: 16384 op, 139804834.98 ns, 8.5330 us/op
+MainTarget 61: 16384 op, 143563169.42 ns, 8.7624 us/op
+MainTarget 62: 16384 op, 152693747.99 ns, 9.3197 us/op
+MainTarget 63: 16384 op, 142308558.12 ns, 8.6858 us/op
+MainTarget 64: 16384 op, 146551945.38 ns, 8.9448 us/op
+MainTarget 65: 16384 op, 180829011.36 ns, 11.0369 us/op
+MainTarget 66: 16384 op, 155283629.41 ns, 9.4778 us/op
+MainTarget 67: 16384 op, 158841416.69 ns, 9.6949 us/op
+MainTarget 68: 16384 op, 196501020.33 ns, 11.9935 us/op
+MainTarget 69: 16384 op, 145412456.22 ns, 8.8753 us/op
+MainTarget 70: 16384 op, 178259661.28 ns, 10.8801 us/op
+MainTarget 71: 16384 op, 186302812.28 ns, 11.3710 us/op
+MainTarget 72: 16384 op, 168869141.33 ns, 10.3070 us/op
+MainTarget 73: 16384 op, 172204016.96 ns, 10.5105 us/op
+MainTarget 74: 16384 op, 164996051.38 ns, 10.0706 us/op
+MainTarget 75: 16384 op, 182334398.27 ns, 11.1288 us/op
+MainTarget 76: 16384 op, 151784503.09 ns, 9.2642 us/op
+MainTarget 77: 16384 op, 199576687.84 ns, 12.1812 us/op
+MainTarget 78: 16384 op, 153224263.05 ns, 9.3521 us/op
+MainTarget 79: 16384 op, 181474648.57 ns, 11.0763 us/op
+MainTarget 80: 16384 op, 170616871.33 ns, 10.4136 us/op
+MainTarget 81: 16384 op, 134315268.93 ns, 8.1980 us/op
+MainTarget 82: 16384 op, 188406540.99 ns, 11.4994 us/op
+MainTarget 83: 16384 op, 210505591.49 ns, 12.8482 us/op
+MainTarget 84: 16384 op, 154593629.86 ns, 9.4356 us/op
+MainTarget 85: 16384 op, 165500535.65 ns, 10.1014 us/op
+MainTarget 86: 16384 op, 190941427.76 ns, 11.6541 us/op
+MainTarget 87: 16384 op, 150576820.56 ns, 9.1905 us/op
+MainTarget 88: 16384 op, 175842463.06 ns, 10.7326 us/op
+MainTarget 89: 16384 op, 183487819.42 ns, 11.1992 us/op
+MainTarget 90: 16384 op, 179842773.96 ns, 10.9767 us/op
+MainTarget 91: 16384 op, 168291330.86 ns, 10.2717 us/op
+MainTarget 92: 16384 op, 174899488.11 ns, 10.6750 us/op
+MainTarget 93: 16384 op, 178097610.37 ns, 10.8702 us/op
+MainTarget 94: 16384 op, 176669582.61 ns, 10.7831 us/op
+MainTarget 95: 16384 op, 175805433.32 ns, 10.7303 us/op
+MainTarget 96: 16384 op, 165627389.98 ns, 10.1091 us/op
+MainTarget 97: 16384 op, 166714817.54 ns, 10.1755 us/op
+MainTarget 98: 16384 op, 133944604.99 ns, 8.1753 us/op
+MainTarget 99: 16384 op, 137018439.34 ns, 8.3629 us/op
+MainTarget 100: 16384 op, 221039266.91 ns, 13.4912 us/op
+MainTarget 101: 16384 op, 188022678.33 ns, 11.4760 us/op
+MainTarget 102: 16384 op, 151565624.38 ns, 9.2508 us/op
+MainTarget 103: 16384 op, 213063209.39 ns, 13.0043 us/op
+MainTarget 104: 16384 op, 175817898.78 ns, 10.7311 us/op
+MainTarget 105: 16384 op, 148602512.6 ns, 9.0700 us/op
+MainTarget 106: 16384 op, 138532625.39 ns, 8.4554 us/op
+MainTarget 107: 16384 op, 170787354.75 ns, 10.4240 us/op
+MainTarget 108: 16384 op, 140069909.2 ns, 8.5492 us/op
+MainTarget 109: 16384 op, 144535841.48 ns, 8.8218 us/op
+MainTarget 110: 16384 op, 184731065.16 ns, 11.2751 us/op
+MainTarget 111: 16384 op, 140316285.24 ns, 8.5642 us/op
+MainTarget 112: 16384 op, 139710610.81 ns, 8.5273 us/op
+MainTarget 113: 16384 op, 159702266.29 ns, 9.7475 us/op
+MainTarget 114: 16384 op, 141537899.75 ns, 8.6388 us/op
+MainTarget 115: 16384 op, 143006256.92 ns, 8.7284 us/op
+MainTarget 116: 16384 op, 150309179.93 ns, 9.1741 us/op
+MainTarget 117: 16384 op, 145136749.7 ns, 8.8584 us/op
+MainTarget 118: 16384 op, 217860942.73 ns, 13.2972 us/op
+MainTarget 119: 16384 op, 184449125.92 ns, 11.2579 us/op
+MainTarget 120: 16384 op, 138385972.99 ns, 8.4464 us/op
+MainTarget 121: 16384 op, 138972215.97 ns, 8.4822 us/op
+MainTarget 122: 16384 op, 144815214.31 ns, 8.8388 us/op
+MainTarget 123: 16384 op, 148129558.6 ns, 9.0411 us/op
+MainTarget 124: 16384 op, 146660468.16 ns, 8.9514 us/op
+MainTarget 125: 16384 op, 156244935.91 ns, 9.5364 us/op
+MainTarget 126: 16384 op, 153547264.97 ns, 9.3718 us/op
+MainTarget 127: 16384 op, 194220942.11 ns, 11.8543 us/op
+MainTarget 128: 16384 op, 188996083.65 ns, 11.5354 us/op
+MainTarget 129: 16384 op, 200647983.64 ns, 12.2466 us/op
+MainTarget 130: 16384 op, 205399888.1 ns, 12.5366 us/op
+MainTarget 131: 16384 op, 174780699.66 ns, 10.6678 us/op
+MainTarget 132: 16384 op, 170415224.28 ns, 10.4013 us/op
+MainTarget 133: 16384 op, 174174658.61 ns, 10.6308 us/op
+MainTarget 134: 16384 op, 197195419.46 ns, 12.0359 us/op
+MainTarget 135: 16384 op, 181437618.83 ns, 11.0741 us/op
+MainTarget 136: 16384 op, 187093635.36 ns, 11.4193 us/op
+MainTarget 137: 16384 op, 149921650.95 ns, 9.1505 us/op
+MainTarget 138: 16384 op, 184015401.44 ns, 11.2314 us/op
+MainTarget 139: 16384 op, 138154262.2 ns, 8.4323 us/op
+MainTarget 140: 16384 op, 136788561.7 ns, 8.3489 us/op
+MainTarget 141: 16384 op, 185724635.18 ns, 11.3357 us/op
+MainTarget 142: 16384 op, 149452729.9 ns, 9.1219 us/op
+MainTarget 143: 16384 op, 140299786.84 ns, 8.5632 us/op
+MainTarget 144: 16384 op, 143395252.42 ns, 8.7522 us/op
+MainTarget 145: 16384 op, 149024504.88 ns, 9.0957 us/op
+MainTarget 146: 16384 op, 143148876.39 ns, 8.7371 us/op
+MainTarget 147: 16384 op, 149907352.34 ns, 9.1496 us/op
+MainTarget 148: 16384 op, 201392977.84 ns, 12.2921 us/op
+MainTarget 149: 16384 op, 143378387.4 ns, 8.7511 us/op
+MainTarget 150: 16384 op, 152775140.07 ns, 9.3247 us/op
+MainTarget 151: 16384 op, 156879207.55 ns, 9.5751 us/op
+MainTarget 152: 16384 op, 146573209.98 ns, 8.9461 us/op
+MainTarget 153: 16384 op, 163672880.08 ns, 9.9898 us/op
+MainTarget 154: 16384 op, 228294527.89 ns, 13.9340 us/op
+MainTarget 155: 16384 op, 194826616.53 ns, 11.8913 us/op
+MainTarget 156: 16384 op, 140509499.78 ns, 8.5760 us/op
+MainTarget 157: 16384 op, 143521740.12 ns, 8.7599 us/op
+MainTarget 158: 16384 op, 148202151.54 ns, 9.0455 us/op
+MainTarget 159: 16384 op, 151492298.18 ns, 9.2464 us/op
+MainTarget 160: 16384 op, 194115719.01 ns, 11.8479 us/op
+MainTarget 161: 16384 op, 150886257.13 ns, 9.2094 us/op
+MainTarget 162: 16384 op, 193125448.66 ns, 11.7874 us/op
+MainTarget 163: 16384 op, 213225626.92 ns, 13.0143 us/op
+MainTarget 164: 16384 op, 195466387.64 ns, 11.9303 us/op
+MainTarget 165: 16384 op, 204043353.38 ns, 12.4538 us/op
+MainTarget 166: 16384 op, 152464970.24 ns, 9.3057 us/op
+MainTarget 167: 16384 op, 141776209.9 ns, 8.6533 us/op
+MainTarget 168: 16384 op, 146062492.99 ns, 8.9149 us/op
+MainTarget 169: 16384 op, 144818513.99 ns, 8.8390 us/op
+MainTarget 170: 16384 op, 150065003.68 ns, 9.1592 us/op
+MainTarget 171: 16384 op, 148805626.17 ns, 9.0824 us/op
+MainTarget 172: 16384 op, 149537788.29 ns, 9.1271 us/op
+MainTarget 173: 16384 op, 152023913.14 ns, 9.2788 us/op
+MainTarget 174: 16384 op, 147449458.08 ns, 8.9996 us/op
+MainTarget 175: 16384 op, 163626684.58 ns, 9.9870 us/op
+MainTarget 176: 16384 op, 183647670.54 ns, 11.2090 us/op
+MainTarget 177: 16384 op, 198044170.24 ns, 12.0877 us/op
+MainTarget 178: 16384 op, 145669097.92 ns, 8.8909 us/op
+MainTarget 179: 16384 op, 152261490.03 ns, 9.2933 us/op
+MainTarget 180: 16384 op, 221731466.25 ns, 13.5334 us/op
+MainTarget 181: 16384 op, 178886966.93 ns, 10.9184 us/op
+MainTarget 182: 16384 op, 140011981.5 ns, 8.5457 us/op
+MainTarget 183: 16384 op, 142813042.38 ns, 8.7166 us/op
+MainTarget 184: 16384 op, 142459976.73 ns, 8.6951 us/op
+MainTarget 185: 16384 op, 191705120.15 ns, 11.7008 us/op
+MainTarget 186: 16384 op, 189605424.38 ns, 11.5726 us/op
+MainTarget 187: 16384 op, 145137849.59 ns, 8.8585 us/op
+MainTarget 188: 16384 op, 144237770.47 ns, 8.8036 us/op
+MainTarget 189: 16384 op, 142037251.18 ns, 8.6693 us/op
+MainTarget 190: 16384 op, 149156125.41 ns, 9.1038 us/op
+MainTarget 191: 16384 op, 201823036.01 ns, 12.3183 us/op
+MainTarget 192: 16384 op, 212915823.72 ns, 12.9954 us/op
+MainTarget 193: 16384 op, 195127987.22 ns, 11.9097 us/op
+MainTarget 194: 16384 op, 186288513.67 ns, 11.3701 us/op
+MainTarget 195: 16384 op, 141095376.12 ns, 8.6118 us/op
+MainTarget 196: 16384 op, 220673369.17 ns, 13.4688 us/op
+MainTarget 197: 16384 op, 177416409.96 ns, 10.8286 us/op
+MainTarget 198: 16384 op, 143571601.94 ns, 8.7629 us/op
+MainTarget 199: 16384 op, 195857216.29 ns, 11.9542 us/op
+MainTarget 200: 16384 op, 183893679.94 ns, 11.2240 us/op
+MainTarget 201: 16384 op, 168727621.76 ns, 10.2983 us/op
+MainTarget 202: 16384 op, 189598091.76 ns, 11.5721 us/op
+MainTarget 203: 16384 op, 144732355.7 ns, 8.8338 us/op
+MainTarget 204: 16384 op, 132489446.53 ns, 8.0865 us/op
+MainTarget 205: 16384 op, 189685349.94 ns, 11.5775 us/op
+MainTarget 206: 16384 op, 185810793.47 ns, 11.3410 us/op
+MainTarget 207: 16384 op, 150340710.19 ns, 9.1761 us/op
+
+Result 1: 16384 op, 179158273.87 ns, 10.9350 us/op
+Result 2: 16384 op, 180757884.95 ns, 11.0326 us/op
+Result 3: 16384 op, 147078427.5 ns, 8.9770 us/op
+Result 4: 16384 op, 142844939.28 ns, 8.7186 us/op
+Result 5: 16384 op, 141314254.83 ns, 8.6251 us/op
+Result 6: 16384 op, 141591427.87 ns, 8.6421 us/op
+Result 7: 16384 op, 147083193.71 ns, 8.9772 us/op
+Result 8: 16384 op, 180720488.59 ns, 11.0303 us/op
+Result 9: 16384 op, 147091626.22 ns, 8.9778 us/op
+Result 10: 16384 op, 153760277.58 ns, 9.3848 us/op
+Result 11: 16384 op, 190158303.94 ns, 11.6063 us/op
+Result 12: 16384 op, 181109484.08 ns, 11.0540 us/op
+Result 13: 16384 op, 227077679.58 ns, 13.8597 us/op
+Result 14: 16384 op, 211293114.89 ns, 12.8963 us/op
+Result 15: 16384 op, 181586104.39 ns, 11.0831 us/op
+Result 16: 16384 op, 176579024.75 ns, 10.7775 us/op
+Result 17: 16384 op, 132861577 ns, 8.1092 us/op
+Result 18: 16384 op, 167846240.82 ns, 10.2445 us/op
+Result 19: 16384 op, 179878703.8 ns, 10.9789 us/op
+Result 20: 16384 op, 175372075.48 ns, 10.7039 us/op
+Result 21: 16384 op, 158846916.16 ns, 9.6952 us/op
+Result 22: 16384 op, 209045300.19 ns, 12.7591 us/op
+Result 23: 16384 op, 158589174.56 ns, 9.6795 us/op
+Result 24: 16384 op, 177028514.36 ns, 10.8050 us/op
+Result 25: 16384 op, 160918014.71 ns, 9.8217 us/op
+Result 26: 16384 op, 133782920.71 ns, 8.1655 us/op
+Result 27: 16384 op, 204470845.14 ns, 12.4799 us/op
+Result 28: 16384 op, 175044307.36 ns, 10.6839 us/op
+Result 29: 16384 op, 158452054.56 ns, 9.6711 us/op
+Result 30: 16384 op, 141330019.97 ns, 8.6261 us/op
+Result 31: 16384 op, 141765944.23 ns, 8.6527 us/op
+Result 32: 16384 op, 144227138.17 ns, 8.8029 us/op
+Result 33: 16384 op, 186285947.25 ns, 11.3700 us/op
+Result 34: 16384 op, 135849619.69 ns, 8.2916 us/op
+Result 35: 16384 op, 158446555.1 ns, 9.6708 us/op
+Result 36: 16384 op, 205270100.73 ns, 12.5287 us/op
+Result 37: 16384 op, 151405406.63 ns, 9.2411 us/op
+Result 38: 16384 op, 174781066.29 ns, 10.6678 us/op
+Result 39: 16384 op, 191089546.69 ns, 11.6632 us/op
+Result 40: 16384 op, 189281322.57 ns, 11.5528 us/op
+Result 41: 16384 op, 141706916.64 ns, 8.6491 us/op
+Result 42: 16384 op, 147941843.52 ns, 9.0297 us/op
+Result 43: 16384 op, 138605218.33 ns, 8.4598 us/op
+Result 44: 16384 op, 210870389.34 ns, 12.8705 us/op
+Result 45: 16384 op, 140278522.24 ns, 8.5619 us/op
+Result 46: 16384 op, 197576715.7 ns, 12.0591 us/op
+Result 47: 16384 op, 173074032.33 ns, 10.5636 us/op
+Result 48: 16384 op, 145233906.92 ns, 8.8644 us/op
+Result 49: 16384 op, 146362397.15 ns, 8.9333 us/op
+Result 50: 16384 op, 197758931.31 ns, 12.0702 us/op
+Result 51: 16384 op, 145762955.46 ns, 8.8967 us/op
+Result 52: 16384 op, 154642758.41 ns, 9.4386 us/op
+Result 53: 16384 op, 206311332.78 ns, 12.5922 us/op
+Result 54: 16384 op, 190219897.94 ns, 11.6101 us/op
+Result 55: 16384 op, 164738309.79 ns, 10.0548 us/op
+Result 56: 16384 op, 140633054.42 ns, 8.5836 us/op
+Result 57: 16384 op, 184191017.69 ns, 11.2421 us/op
+Result 58: 16384 op, 174438632.94 ns, 10.6469 us/op
+Result 59: 16384 op, 138170027.33 ns, 8.4332 us/op
+Result 60: 16384 op, 139717943.43 ns, 8.5277 us/op
+Result 61: 16384 op, 143476277.87 ns, 8.7571 us/op
+Result 62: 16384 op, 152606856.44 ns, 9.3144 us/op
+Result 63: 16384 op, 142221666.57 ns, 8.6805 us/op
+Result 64: 16384 op, 146465053.83 ns, 8.9395 us/op
+Result 65: 16384 op, 180742119.82 ns, 11.0316 us/op
+Result 66: 16384 op, 155196737.86 ns, 9.4725 us/op
+Result 67: 16384 op, 158754525.14 ns, 9.6896 us/op
+Result 68: 16384 op, 196414128.79 ns, 11.9882 us/op
+Result 69: 16384 op, 145325564.67 ns, 8.8700 us/op
+Result 70: 16384 op, 178172769.73 ns, 10.8748 us/op
+Result 71: 16384 op, 186215920.73 ns, 11.3657 us/op
+Result 72: 16384 op, 168782249.78 ns, 10.3017 us/op
+Result 73: 16384 op, 172117125.41 ns, 10.5052 us/op
+Result 74: 16384 op, 164909159.84 ns, 10.0653 us/op
+Result 75: 16384 op, 182247506.73 ns, 11.1235 us/op
+Result 76: 16384 op, 151697611.55 ns, 9.2589 us/op
+Result 77: 16384 op, 199489796.29 ns, 12.1759 us/op
+Result 78: 16384 op, 153137371.5 ns, 9.3468 us/op
+Result 79: 16384 op, 181387757.02 ns, 11.0710 us/op
+Result 80: 16384 op, 170529979.78 ns, 10.4083 us/op
+Result 81: 16384 op, 134228377.39 ns, 8.1926 us/op
+Result 82: 16384 op, 188319649.44 ns, 11.4941 us/op
+Result 83: 16384 op, 210418699.94 ns, 12.8429 us/op
+Result 84: 16384 op, 154506738.31 ns, 9.4303 us/op
+Result 85: 16384 op, 165413644.1 ns, 10.0960 us/op
+Result 86: 16384 op, 190854536.22 ns, 11.6488 us/op
+Result 87: 16384 op, 150489929.01 ns, 9.1852 us/op
+Result 88: 16384 op, 175755571.51 ns, 10.7273 us/op
+Result 89: 16384 op, 183400927.87 ns, 11.1939 us/op
+Result 90: 16384 op, 179755882.41 ns, 10.9714 us/op
+Result 91: 16384 op, 168204439.31 ns, 10.2664 us/op
+Result 92: 16384 op, 174812596.56 ns, 10.6697 us/op
+Result 93: 16384 op, 178010718.82 ns, 10.8649 us/op
+Result 94: 16384 op, 176582691.06 ns, 10.7778 us/op
+Result 95: 16384 op, 175718541.78 ns, 10.7250 us/op
+Result 96: 16384 op, 165540498.43 ns, 10.1038 us/op
+Result 97: 16384 op, 166627925.99 ns, 10.1702 us/op
+Result 98: 16384 op, 133857713.44 ns, 8.1700 us/op
+Result 99: 16384 op, 136931547.79 ns, 8.3576 us/op
+Result 100: 16384 op, 220952375.37 ns, 13.4859 us/op
+Result 101: 16384 op, 187935786.78 ns, 11.4707 us/op
+Result 102: 16384 op, 151478732.84 ns, 9.2455 us/op
+Result 103: 16384 op, 212976317.84 ns, 12.9990 us/op
+Result 104: 16384 op, 175731007.23 ns, 10.7258 us/op
+Result 105: 16384 op, 148515621.05 ns, 9.0647 us/op
+Result 106: 16384 op, 138445733.84 ns, 8.4501 us/op
+Result 107: 16384 op, 170700463.2 ns, 10.4187 us/op
+Result 108: 16384 op, 139983017.65 ns, 8.5439 us/op
+Result 109: 16384 op, 144448949.93 ns, 8.8165 us/op
+Result 110: 16384 op, 184644173.61 ns, 11.2698 us/op
+Result 111: 16384 op, 140229393.69 ns, 8.5589 us/op
+Result 112: 16384 op, 139623719.27 ns, 8.5220 us/op
+Result 113: 16384 op, 159615374.74 ns, 9.7421 us/op
+Result 114: 16384 op, 141451008.2 ns, 8.6335 us/op
+Result 115: 16384 op, 142919365.38 ns, 8.7231 us/op
+Result 116: 16384 op, 150222288.38 ns, 9.1688 us/op
+Result 117: 16384 op, 145049858.15 ns, 8.8531 us/op
+Result 118: 16384 op, 217774051.18 ns, 13.2919 us/op
+Result 119: 16384 op, 184362234.37 ns, 11.2526 us/op
+Result 120: 16384 op, 138299081.44 ns, 8.4411 us/op
+Result 121: 16384 op, 138885324.42 ns, 8.4769 us/op
+Result 122: 16384 op, 144728322.76 ns, 8.8335 us/op
+Result 123: 16384 op, 148042667.05 ns, 9.0358 us/op
+Result 124: 16384 op, 146573576.61 ns, 8.9461 us/op
+Result 125: 16384 op, 156158044.36 ns, 9.5311 us/op
+Result 126: 16384 op, 153460373.42 ns, 9.3665 us/op
+Result 127: 16384 op, 194134050.56 ns, 11.8490 us/op
+Result 128: 16384 op, 188909192.1 ns, 11.5301 us/op
+Result 129: 16384 op, 200561092.09 ns, 12.2413 us/op
+Result 130: 16384 op, 205312996.56 ns, 12.5313 us/op
+Result 131: 16384 op, 174693808.12 ns, 10.6625 us/op
+Result 132: 16384 op, 170328332.73 ns, 10.3960 us/op
+Result 133: 16384 op, 174087767.06 ns, 10.6255 us/op
+Result 134: 16384 op, 197108527.91 ns, 12.0305 us/op
+Result 135: 16384 op, 181350727.29 ns, 11.0688 us/op
+Result 136: 16384 op, 187006743.81 ns, 11.4140 us/op
+Result 137: 16384 op, 149834759.41 ns, 9.1452 us/op
+Result 138: 16384 op, 183928509.89 ns, 11.2261 us/op
+Result 139: 16384 op, 138067370.65 ns, 8.4270 us/op
+Result 140: 16384 op, 136701670.15 ns, 8.3436 us/op
+Result 141: 16384 op, 185637743.64 ns, 11.3304 us/op
+Result 142: 16384 op, 149365838.35 ns, 9.1166 us/op
+Result 143: 16384 op, 140212895.29 ns, 8.5579 us/op
+Result 144: 16384 op, 143308360.87 ns, 8.7468 us/op
+Result 145: 16384 op, 148937613.33 ns, 9.0904 us/op
+Result 146: 16384 op, 143061984.84 ns, 8.7318 us/op
+Result 147: 16384 op, 149820460.8 ns, 9.1443 us/op
+Result 148: 16384 op, 201306086.29 ns, 12.2867 us/op
+Result 149: 16384 op, 143291495.85 ns, 8.7458 us/op
+Result 150: 16384 op, 152688248.52 ns, 9.3194 us/op
+Result 151: 16384 op, 156792316 ns, 9.5698 us/op
+Result 152: 16384 op, 146486318.43 ns, 8.9408 us/op
+Result 153: 16384 op, 163585988.54 ns, 9.9845 us/op
+Result 154: 16384 op, 228207636.34 ns, 13.9287 us/op
+Result 155: 16384 op, 194739724.98 ns, 11.8860 us/op
+Result 156: 16384 op, 140422608.23 ns, 8.5707 us/op
+Result 157: 16384 op, 143434848.57 ns, 8.7546 us/op
+Result 158: 16384 op, 148115259.99 ns, 9.0402 us/op
+Result 159: 16384 op, 151405406.63 ns, 9.2411 us/op
+Result 160: 16384 op, 194028827.46 ns, 11.8426 us/op
+Result 161: 16384 op, 150799365.58 ns, 9.2041 us/op
+Result 162: 16384 op, 193038557.12 ns, 11.7821 us/op
+Result 163: 16384 op, 213138735.37 ns, 13.0090 us/op
+Result 164: 16384 op, 195379496.09 ns, 11.9250 us/op
+Result 165: 16384 op, 203956461.83 ns, 12.4485 us/op
+Result 166: 16384 op, 152378078.69 ns, 9.3004 us/op
+Result 167: 16384 op, 141689318.35 ns, 8.6480 us/op
+Result 168: 16384 op, 145975601.44 ns, 8.9096 us/op
+Result 169: 16384 op, 144731622.44 ns, 8.8337 us/op
+Result 170: 16384 op, 149978112.13 ns, 9.1539 us/op
+Result 171: 16384 op, 148718734.62 ns, 9.0771 us/op
+Result 172: 16384 op, 149450896.74 ns, 9.1218 us/op
+Result 173: 16384 op, 151937021.59 ns, 9.2735 us/op
+Result 174: 16384 op, 147362566.53 ns, 8.9943 us/op
+Result 175: 16384 op, 163539793.03 ns, 9.9817 us/op
+Result 176: 16384 op, 183560778.99 ns, 11.2037 us/op
+Result 177: 16384 op, 197957278.69 ns, 12.0824 us/op
+Result 178: 16384 op, 145582206.37 ns, 8.8856 us/op
+Result 179: 16384 op, 152174598.48 ns, 9.2880 us/op
+Result 180: 16384 op, 221644574.7 ns, 13.5281 us/op
+Result 181: 16384 op, 178800075.38 ns, 10.9131 us/op
+Result 182: 16384 op, 139925089.95 ns, 8.5403 us/op
+Result 183: 16384 op, 142726150.84 ns, 8.7113 us/op
+Result 184: 16384 op, 142373085.18 ns, 8.6898 us/op
+Result 185: 16384 op, 191618228.6 ns, 11.6954 us/op
+Result 186: 16384 op, 189518532.83 ns, 11.5673 us/op
+Result 187: 16384 op, 145050958.04 ns, 8.8532 us/op
+Result 188: 16384 op, 144150878.92 ns, 8.7983 us/op
+Result 189: 16384 op, 141950359.63 ns, 8.6640 us/op
+Result 190: 16384 op, 149069233.87 ns, 9.0985 us/op
+Result 191: 16384 op, 201736144.46 ns, 12.3130 us/op
+Result 192: 16384 op, 212828932.17 ns, 12.9900 us/op
+Result 193: 16384 op, 195041095.67 ns, 11.9044 us/op
+Result 194: 16384 op, 186201622.12 ns, 11.3648 us/op
+Result 195: 16384 op, 141008484.57 ns, 8.6065 us/op
+Result 196: 16384 op, 220586477.62 ns, 13.4635 us/op
+Result 197: 16384 op, 177329518.42 ns, 10.8233 us/op
+Result 198: 16384 op, 143484710.39 ns, 8.7576 us/op
+Result 199: 16384 op, 195770324.74 ns, 11.9489 us/op
+Result 200: 16384 op, 183806788.39 ns, 11.2187 us/op
+Result 201: 16384 op, 168640730.21 ns, 10.2930 us/op
+Result 202: 16384 op, 189511200.21 ns, 11.5668 us/op
+Result 203: 16384 op, 144645464.15 ns, 8.8285 us/op
+Result 204: 16384 op, 132402554.98 ns, 8.0812 us/op
+Result 205: 16384 op, 189598458.39 ns, 11.5722 us/op
+Result 206: 16384 op, 185723901.92 ns, 11.3357 us/op
+Result 207: 16384 op, 150253818.65 ns, 9.1708 us/op
+
+// Launch: 2
+
+// Benchmark Process Environment Information:
+// CLR=CORE, Arch=64-bit ? [RyuJIT]
+// GC=Concurrent Workstation
+
+Pilot 1: 4 op, 794489.39 ns, 198.6223 us/op
+Pilot 2: 8 op, 125021.17 ns, 15.6276 us/op
+Pilot 3: 16 op, 188081.71 ns, 11.7551 us/op
+Pilot 4: 32 op, 349765.98 ns, 10.9302 us/op
+Pilot 5: 64 op, 765525.54 ns, 11.9613 us/op
+Pilot 6: 128 op, 1357634.61 ns, 10.6065 us/op
+Pilot 7: 256 op, 2475125.92 ns, 9.6685 us/op
+Pilot 8: 512 op, 4809832.16 ns, 9.3942 us/op
+Pilot 9: 1024 op, 10517543.66 ns, 10.2710 us/op
+Pilot 10: 2048 op, 27648377.4 ns, 13.5002 us/op
+Pilot 11: 4096 op, 58007624.46 ns, 14.1620 us/op
+Pilot 12: 8192 op, 98805956.14 ns, 12.0613 us/op
+Pilot 13: 16384 op, 179737550.86 ns, 10.9703 us/op
+Pilot 14: 32768 op, 288223665.44 ns, 8.7959 us/op
+
+IdleWarmup 1: 32768 op, 147752.3 ns, 4.5090 ns/op
+IdleWarmup 2: 32768 op, 142986.09 ns, 4.3636 ns/op
+IdleWarmup 3: 32768 op, 142619.46 ns, 4.3524 ns/op
+IdleWarmup 4: 32768 op, 142252.83 ns, 4.3412 ns/op
+IdleWarmup 5: 32768 op, 143719.35 ns, 4.3860 ns/op
+IdleWarmup 6: 32768 op, 144452.62 ns, 4.4083 ns/op
+IdleWarmup 7: 32768 op, 145552.51 ns, 4.4419 ns/op
+IdleWarmup 8: 32768 op, 145552.51 ns, 4.4419 ns/op
+IdleWarmup 9: 32768 op, 142252.83 ns, 4.3412 ns/op
+IdleWarmup 10: 32768 op, 142619.46 ns, 4.3524 ns/op
+
+IdleTarget 1: 32768 op, 149952.08 ns, 4.5762 ns/op
+IdleTarget 2: 32768 op, 179649.19 ns, 5.4825 ns/op
+IdleTarget 3: 32768 op, 178549.3 ns, 5.4489 ns/op
+IdleTarget 4: 32768 op, 175982.88 ns, 5.3706 ns/op
+IdleTarget 5: 32768 op, 177449.41 ns, 5.4153 ns/op
+IdleTarget 6: 32768 op, 168650.26 ns, 5.1468 ns/op
+IdleTarget 7: 32768 op, 172683.2 ns, 5.2699 ns/op
+IdleTarget 8: 32768 op, 166083.85 ns, 5.0685 ns/op
+IdleTarget 9: 32768 op, 168650.26 ns, 5.1468 ns/op
+IdleTarget 10: 32768 op, 166817.11 ns, 5.0909 ns/op
+
+MainWarmup 1: 32768 op, 399872339.08 ns, 12.2031 us/op
+MainWarmup 2: 32768 op, 377479983.78 ns, 11.5198 us/op
+MainWarmup 3: 32768 op, 274806070.53 ns, 8.3864 us/op
+MainWarmup 4: 32768 op, 374637493.59 ns, 11.4330 us/op
+MainWarmup 5: 32768 op, 334309916.12 ns, 10.2023 us/op
+MainWarmup 6: 32768 op, 380218717.39 ns, 11.6034 us/op
+MainWarmup 7: 32768 op, 275427876.72 ns, 8.4054 us/op
+
+MainTarget 1: 32768 op, 296175158.7 ns, 9.0385 us/op
+MainTarget 2: 32768 op, 390506383.41 ns, 11.9173 us/op
+MainTarget 3: 32768 op, 312065313.11 ns, 9.5235 us/op
+MainTarget 4: 32768 op, 366677567.83 ns, 11.1901 us/op
+MainTarget 5: 32768 op, 281635306.27 ns, 8.5948 us/op
+MainTarget 6: 32768 op, 317290171.58 ns, 9.6829 us/op
+MainTarget 7: 32768 op, 354369764.97 ns, 10.8145 us/op
+MainTarget 8: 32768 op, 405314976.36 ns, 12.3692 us/op
+MainTarget 9: 32768 op, 296267549.71 ns, 9.0414 us/op
+MainTarget 10: 32768 op, 287492603.22 ns, 8.7736 us/op
+MainTarget 11: 32768 op, 393448597.23 ns, 12.0071 us/op
+MainTarget 12: 32768 op, 403424260.27 ns, 12.3115 us/op
+MainTarget 13: 32768 op, 370116200.03 ns, 11.2951 us/op
+MainTarget 14: 32768 op, 272395838.3 ns, 8.3129 us/op
+MainTarget 15: 32768 op, 324861468.47 ns, 9.9140 us/op
+MainTarget 16: 32768 op, 353560976.97 ns, 10.7898 us/op
+MainTarget 17: 32768 op, 328941704.94 ns, 10.0385 us/op
+MainTarget 18: 32768 op, 331584747.86 ns, 10.1192 us/op
+MainTarget 19: 32768 op, 310948555.07 ns, 9.4894 us/op
+MainTarget 20: 32768 op, 381278647.63 ns, 11.6357 us/op
+MainTarget 21: 32768 op, 367273343.21 ns, 11.2083 us/op
+MainTarget 22: 32768 op, 282889917.57 ns, 8.6331 us/op
+MainTarget 23: 32768 op, 272682910.38 ns, 8.3216 us/op
+MainTarget 24: 32768 op, 278465781.23 ns, 8.4981 us/op
+MainTarget 25: 32768 op, 329078824.93 ns, 10.0427 us/op
+MainTarget 26: 32768 op, 315205874.31 ns, 9.6193 us/op
+MainTarget 27: 32768 op, 290336559.93 ns, 8.8604 us/op
+MainTarget 28: 32768 op, 381129795.44 ns, 11.6312 us/op
+MainTarget 29: 32768 op, 314523207.38 ns, 9.5985 us/op
+MainTarget 30: 32768 op, 296545089.38 ns, 9.0498 us/op
+MainTarget 31: 32768 op, 287000217.78 ns, 8.7586 us/op
+MainTarget 32: 32768 op, 398462276.24 ns, 12.1601 us/op
+MainTarget 33: 32768 op, 410162204.89 ns, 12.5172 us/op
+MainTarget 34: 32768 op, 293114156.43 ns, 8.9451 us/op
+MainTarget 35: 32768 op, 285924889.04 ns, 8.7257 us/op
+MainTarget 36: 32768 op, 334668114.61 ns, 10.2133 us/op
+MainTarget 37: 32768 op, 289606230.97 ns, 8.8381 us/op
+MainTarget 38: 32768 op, 350776047.85 ns, 10.7048 us/op
+MainTarget 39: 32768 op, 321574254.88 ns, 9.8137 us/op
+MainTarget 40: 32768 op, 295060233.81 ns, 9.0045 us/op
+MainTarget 41: 32768 op, 328472783.88 ns, 10.0242 us/op
+MainTarget 42: 32768 op, 447594130.68 ns, 13.6595 us/op
+MainTarget 43: 32768 op, 304316933.44 ns, 9.2870 us/op
+MainTarget 44: 32768 op, 284895389.18 ns, 8.6943 us/op
+MainTarget 45: 32768 op, 363789615.4 ns, 11.1020 us/op
+MainTarget 46: 32768 op, 358584188.38 ns, 10.9431 us/op
+MainTarget 47: 32768 op, 276287626.42 ns, 8.4316 us/op
+MainTarget 48: 32768 op, 409687784.37 ns, 12.5027 us/op
+MainTarget 49: 32768 op, 288698819.23 ns, 8.8104 us/op
+MainTarget 50: 32768 op, 418583719.09 ns, 12.7742 us/op
+MainTarget 51: 32768 op, 278218305.3 ns, 8.4905 us/op
+MainTarget 52: 32768 op, 288426045.76 ns, 8.8021 us/op
+MainTarget 53: 32768 op, 295727868.87 ns, 9.0249 us/op
+MainTarget 54: 32768 op, 295915950.58 ns, 9.0306 us/op
+MainTarget 55: 32768 op, 391287307.45 ns, 11.9411 us/op
+MainTarget 56: 32768 op, 284745070.46 ns, 8.6897 us/op
+MainTarget 57: 32768 op, 359452003.97 ns, 10.9696 us/op
+MainTarget 58: 32768 op, 421156368.86 ns, 12.8527 us/op
+MainTarget 59: 32768 op, 358688678.21 ns, 10.9463 us/op
+MainTarget 60: 32768 op, 364220406.83 ns, 11.1151 us/op
+MainTarget 61: 32768 op, 284258184.49 ns, 8.6749 us/op
+MainTarget 62: 32768 op, 277486509.81 ns, 8.4682 us/op
+MainTarget 63: 32768 op, 348960124.48 ns, 10.6494 us/op
+MainTarget 64: 32768 op, 281093425.65 ns, 8.5783 us/op
+MainTarget 65: 32768 op, 284554788.97 ns, 8.6839 us/op
+MainTarget 66: 32768 op, 363583935.4 ns, 11.0957 us/op
+MainTarget 67: 32768 op, 297646448.92 ns, 9.0834 us/op
+MainTarget 68: 32768 op, 435205669 ns, 13.2814 us/op
+MainTarget 69: 32768 op, 278644697.16 ns, 8.5036 us/op
+MainTarget 70: 32768 op, 352724691.64 ns, 10.7643 us/op
+MainTarget 71: 32768 op, 393375637.66 ns, 12.0049 us/op
+MainTarget 72: 32768 op, 287350350.39 ns, 8.7692 us/op
+MainTarget 73: 32768 op, 287116073.18 ns, 8.7621 us/op
+MainTarget 74: 32768 op, 286228826.14 ns, 8.7350 us/op
+MainTarget 75: 32768 op, 368978177.39 ns, 11.2603 us/op
+MainTarget 76: 32768 op, 331809859.29 ns, 10.1260 us/op
+MainTarget 77: 32768 op, 382949018.49 ns, 11.6867 us/op
+MainTarget 78: 32768 op, 369273315.35 ns, 11.2693 us/op
+MainTarget 79: 32768 op, 346959052.45 ns, 10.5883 us/op
+MainTarget 80: 32768 op, 296477629.28 ns, 9.0478 us/op
+MainTarget 81: 32768 op, 297846262.82 ns, 9.0895 us/op
+MainTarget 82: 32768 op, 390439289.94 ns, 11.9153 us/op
+MainTarget 83: 32768 op, 308423567.33 ns, 9.4123 us/op
+MainTarget 84: 32768 op, 296859292.15 ns, 9.0594 us/op
+MainTarget 85: 32768 op, 302394687.08 ns, 9.2284 us/op
+MainTarget 86: 32768 op, 300690219.53 ns, 9.1763 us/op
+MainTarget 87: 32768 op, 381177090.84 ns, 11.6326 us/op
+MainTarget 88: 32768 op, 389983934.23 ns, 11.9014 us/op
+MainTarget 89: 32768 op, 302252067.62 ns, 9.2240 us/op
+MainTarget 90: 32768 op, 299331851.66 ns, 9.1349 us/op
+MainTarget 91: 32768 op, 429700704.44 ns, 13.1134 us/op
+MainTarget 92: 32768 op, 325437445.78 ns, 9.9316 us/op
+MainTarget 93: 32768 op, 291272568.89 ns, 8.8889 us/op
+MainTarget 94: 32768 op, 373355018.34 ns, 11.3939 us/op
+MainTarget 95: 32768 op, 397647255.51 ns, 12.1352 us/op
+MainTarget 96: 32768 op, 280654201.7 ns, 8.5649 us/op
+MainTarget 97: 32768 op, 341687265.22 ns, 10.4275 us/op
+MainTarget 98: 32768 op, 299303254.44 ns, 9.1340 us/op
+MainTarget 99: 32768 op, 319036068.43 ns, 9.7362 us/op
+MainTarget 100: 32768 op, 424998295.17 ns, 12.9699 us/op
+MainTarget 101: 32768 op, 337249930.16 ns, 10.2921 us/op
+MainTarget 102: 32768 op, 344516556.69 ns, 10.5138 us/op
+MainTarget 103: 32768 op, 280080790.81 ns, 8.5474 us/op
+MainTarget 104: 32768 op, 364427919.98 ns, 11.1215 us/op
+MainTarget 105: 32768 op, 366282706.24 ns, 11.1781 us/op
+MainTarget 106: 32768 op, 355668371.99 ns, 10.8541 us/op
+MainTarget 107: 32768 op, 283205586.87 ns, 8.6427 us/op
+MainTarget 108: 32768 op, 353028262.12 ns, 10.7736 us/op
+MainTarget 109: 32768 op, 283132627.3 ns, 8.6405 us/op
+MainTarget 110: 32768 op, 312101609.58 ns, 9.5246 us/op
+MainTarget 111: 32768 op, 331732133.52 ns, 10.1237 us/op
+MainTarget 112: 32768 op, 321267384.73 ns, 9.8043 us/op
+MainTarget 113: 32768 op, 278465047.97 ns, 8.4981 us/op
+MainTarget 114: 32768 op, 282882218.32 ns, 8.6329 us/op
+MainTarget 115: 32768 op, 299714247.79 ns, 9.1466 us/op
+MainTarget 116: 32768 op, 394483963.19 ns, 12.0387 us/op
+MainTarget 117: 32768 op, 339069519.84 ns, 10.3476 us/op
+MainTarget 118: 32768 op, 284779533.78 ns, 8.6908 us/op
+MainTarget 119: 32768 op, 369142794.71 ns, 11.2653 us/op
+MainTarget 120: 32768 op, 381942983.01 ns, 11.6560 us/op
+MainTarget 121: 32768 op, 290859375.74 ns, 8.8763 us/op
+MainTarget 122: 32768 op, 288509271 ns, 8.8046 us/op
+MainTarget 123: 32768 op, 304260838.9 ns, 9.2853 us/op
+MainTarget 124: 32768 op, 362400083.89 ns, 11.0596 us/op
+MainTarget 125: 32768 op, 322361778.28 ns, 9.8377 us/op
+MainTarget 126: 32768 op, 312633957.8 ns, 9.5408 us/op
+MainTarget 127: 32768 op, 290347925.49 ns, 8.8607 us/op
+MainTarget 128: 32768 op, 355316039.59 ns, 10.8434 us/op
+MainTarget 129: 32768 op, 371886661.16 ns, 11.3491 us/op
+MainTarget 130: 32768 op, 303071487.91 ns, 9.2490 us/op
+MainTarget 131: 32768 op, 316975968.8 ns, 9.6733 us/op
+MainTarget 132: 32768 op, 403400795.88 ns, 12.3108 us/op
+MainTarget 133: 32768 op, 320223586.25 ns, 9.7724 us/op
+MainTarget 134: 32768 op, 408142068.05 ns, 12.4555 us/op
+MainTarget 135: 32768 op, 299753843.94 ns, 9.1478 us/op
+MainTarget 136: 32768 op, 331696570.31 ns, 10.1226 us/op
+MainTarget 137: 32768 op, 388583037.16 ns, 11.8586 us/op
+MainTarget 138: 32768 op, 288094977.96 ns, 8.7920 us/op
+MainTarget 139: 32768 op, 382657913.47 ns, 11.6778 us/op
+MainTarget 140: 32768 op, 304718027.76 ns, 9.2993 us/op
+MainTarget 141: 32768 op, 311844234.62 ns, 9.5167 us/op
+MainTarget 142: 32768 op, 279053490.73 ns, 8.5160 us/op
+MainTarget 143: 32768 op, 309256186.35 ns, 9.4377 us/op
+MainTarget 144: 32768 op, 353538612.48 ns, 10.7891 us/op
+MainTarget 145: 32768 op, 351410319.49 ns, 10.7242 us/op
+MainTarget 146: 32768 op, 298026278.64 ns, 9.0950 us/op
+MainTarget 147: 32768 op, 348572228.87 ns, 10.6376 us/op
+MainTarget 148: 32768 op, 362594398.32 ns, 11.0655 us/op
+MainTarget 149: 32768 op, 273191060.95 ns, 8.3371 us/op
+MainTarget 150: 32768 op, 384476036.63 ns, 11.7333 us/op
+MainTarget 151: 32768 op, 392834123.67 ns, 11.9883 us/op
+MainTarget 152: 32768 op, 311753310.13 ns, 9.5140 us/op
+MainTarget 153: 32768 op, 296500727.03 ns, 9.0485 us/op
+MainTarget 154: 32768 op, 292012430.26 ns, 8.9115 us/op
+MainTarget 155: 32768 op, 289151975.15 ns, 8.8242 us/op
+MainTarget 156: 32768 op, 307019003.95 ns, 9.3695 us/op
+MainTarget 157: 32768 op, 437730290.1 ns, 13.3585 us/op
+MainTarget 158: 32768 op, 289850407.22 ns, 8.8455 us/op
+MainTarget 159: 32768 op, 363098515.95 ns, 11.0809 us/op
+MainTarget 160: 32768 op, 337362852.51 ns, 10.2955 us/op
+MainTarget 161: 32768 op, 282154455.78 ns, 8.6107 us/op
+MainTarget 162: 32768 op, 293099491.19 ns, 8.9447 us/op
+MainTarget 163: 32768 op, 326810478.9 ns, 9.9735 us/op
+MainTarget 164: 32768 op, 422773578.22 ns, 12.9020 us/op
+MainTarget 165: 32768 op, 333111766 ns, 10.1658 us/op
+MainTarget 166: 32768 op, 369646179.08 ns, 11.2807 us/op
+MainTarget 167: 32768 op, 380402766.16 ns, 11.6090 us/op
+MainTarget 168: 32768 op, 368960579.1 ns, 11.2598 us/op
+MainTarget 169: 32768 op, 324613992.55 ns, 9.9064 us/op
+MainTarget 170: 32768 op, 331847255.66 ns, 10.1272 us/op
+MainTarget 171: 32768 op, 348448674.23 ns, 10.6338 us/op
+MainTarget 172: 32768 op, 281427059.86 ns, 8.5885 us/op
+MainTarget 173: 32768 op, 285806100.59 ns, 8.7221 us/op
+MainTarget 174: 32768 op, 338597299.1 ns, 10.3332 us/op
+MainTarget 175: 32768 op, 282527319.51 ns, 8.6220 us/op
+MainTarget 176: 32768 op, 383307950.25 ns, 11.6976 us/op
+MainTarget 177: 32768 op, 461883574.12 ns, 14.0956 us/op
+MainTarget 178: 32768 op, 270479458.03 ns, 8.2544 us/op
+MainTarget 179: 32768 op, 458314421.28 ns, 13.9866 us/op
+MainTarget 180: 32768 op, 304878612.14 ns, 9.3042 us/op
+MainTarget 181: 32768 op, 288795243.18 ns, 8.8133 us/op
+MainTarget 182: 32768 op, 342027132.16 ns, 10.4378 us/op
+MainTarget 183: 32768 op, 304551210.65 ns, 9.2942 us/op
+MainTarget 184: 32768 op, 347177564.53 ns, 10.5950 us/op
+MainTarget 185: 32768 op, 301528704.64 ns, 9.2019 us/op
+MainTarget 186: 32768 op, 287336785.04 ns, 8.7688 us/op
+MainTarget 187: 32768 op, 355293308.47 ns, 10.8427 us/op
+MainTarget 188: 32768 op, 299109306.63 ns, 9.1281 us/op
+MainTarget 189: 32768 op, 410408580.93 ns, 12.5247 us/op
+MainTarget 190: 32768 op, 350578067.11 ns, 10.6988 us/op
+
+Result 1: 32768 op, 296004491.96 ns, 9.0333 us/op
+Result 2: 32768 op, 390335716.68 ns, 11.9121 us/op
+Result 3: 32768 op, 311894646.38 ns, 9.5183 us/op
+Result 4: 32768 op, 366506901.1 ns, 11.1849 us/op
+Result 5: 32768 op, 281464639.54 ns, 8.5896 us/op
+Result 6: 32768 op, 317119504.84 ns, 9.6777 us/op
+Result 7: 32768 op, 354199098.23 ns, 10.8093 us/op
+Result 8: 32768 op, 405144309.63 ns, 12.3640 us/op
+Result 9: 32768 op, 296096882.98 ns, 9.0362 us/op
+Result 10: 32768 op, 287321936.49 ns, 8.7684 us/op
+Result 11: 32768 op, 393277930.5 ns, 12.0019 us/op
+Result 12: 32768 op, 403253593.53 ns, 12.3063 us/op
+Result 13: 32768 op, 369945533.3 ns, 11.2898 us/op
+Result 14: 32768 op, 272225171.56 ns, 8.3077 us/op
+Result 15: 32768 op, 324690801.74 ns, 9.9088 us/op
+Result 16: 32768 op, 353390310.24 ns, 10.7846 us/op
+Result 17: 32768 op, 328771038.2 ns, 10.0333 us/op
+Result 18: 32768 op, 331414081.12 ns, 10.1140 us/op
+Result 19: 32768 op, 310777888.34 ns, 9.4842 us/op
+Result 20: 32768 op, 381107980.9 ns, 11.6305 us/op
+Result 21: 32768 op, 367102676.48 ns, 11.2031 us/op
+Result 22: 32768 op, 282719250.84 ns, 8.6279 us/op
+Result 23: 32768 op, 272512243.64 ns, 8.3164 us/op
+Result 24: 32768 op, 278295114.5 ns, 8.4929 us/op
+Result 25: 32768 op, 328908158.2 ns, 10.0375 us/op
+Result 26: 32768 op, 315035207.58 ns, 9.6141 us/op
+Result 27: 32768 op, 290165893.2 ns, 8.8552 us/op
+Result 28: 32768 op, 380959128.71 ns, 11.6259 us/op
+Result 29: 32768 op, 314352540.64 ns, 9.5933 us/op
+Result 30: 32768 op, 296374422.65 ns, 9.0446 us/op
+Result 31: 32768 op, 286829551.05 ns, 8.7533 us/op
+Result 32: 32768 op, 398291609.5 ns, 12.1549 us/op
+Result 33: 32768 op, 409991538.16 ns, 12.5119 us/op
+Result 34: 32768 op, 292943489.7 ns, 8.9399 us/op
+Result 35: 32768 op, 285754222.31 ns, 8.7205 us/op
+Result 36: 32768 op, 334497447.88 ns, 10.2081 us/op
+Result 37: 32768 op, 289435564.23 ns, 8.8329 us/op
+Result 38: 32768 op, 350605381.12 ns, 10.6996 us/op
+Result 39: 32768 op, 321403588.14 ns, 9.8085 us/op
+Result 40: 32768 op, 294889567.07 ns, 8.9993 us/op
+Result 41: 32768 op, 328302117.15 ns, 10.0190 us/op
+Result 42: 32768 op, 447423463.94 ns, 13.6543 us/op
+Result 43: 32768 op, 304146266.71 ns, 9.2818 us/op
+Result 44: 32768 op, 284724722.44 ns, 8.6891 us/op
+Result 45: 32768 op, 363618948.66 ns, 11.0968 us/op
+Result 46: 32768 op, 358413521.64 ns, 10.9379 us/op
+Result 47: 32768 op, 276116959.69 ns, 8.4264 us/op
+Result 48: 32768 op, 409517117.64 ns, 12.4975 us/op
+Result 49: 32768 op, 288528152.5 ns, 8.8052 us/op
+Result 50: 32768 op, 418413052.36 ns, 12.7690 us/op
+Result 51: 32768 op, 278047638.57 ns, 8.4853 us/op
+Result 52: 32768 op, 288255379.03 ns, 8.7969 us/op
+Result 53: 32768 op, 295557202.14 ns, 9.0197 us/op
+Result 54: 32768 op, 295745283.84 ns, 9.0254 us/op
+Result 55: 32768 op, 391116640.72 ns, 11.9359 us/op
+Result 56: 32768 op, 284574403.73 ns, 8.6845 us/op
+Result 57: 32768 op, 359281337.24 ns, 10.9644 us/op
+Result 58: 32768 op, 420985702.12 ns, 12.8475 us/op
+Result 59: 32768 op, 358518011.48 ns, 10.9411 us/op
+Result 60: 32768 op, 364049740.1 ns, 11.1099 us/op
+Result 61: 32768 op, 284087517.75 ns, 8.6697 us/op
+Result 62: 32768 op, 277315843.08 ns, 8.4630 us/op
+Result 63: 32768 op, 348789457.75 ns, 10.6442 us/op
+Result 64: 32768 op, 280922758.91 ns, 8.5731 us/op
+Result 65: 32768 op, 284384122.24 ns, 8.6787 us/op
+Result 66: 32768 op, 363413268.67 ns, 11.0905 us/op
+Result 67: 32768 op, 297475782.19 ns, 9.0782 us/op
+Result 68: 32768 op, 435035002.26 ns, 13.2762 us/op
+Result 69: 32768 op, 278474030.43 ns, 8.4984 us/op
+Result 70: 32768 op, 352554024.91 ns, 10.7591 us/op
+Result 71: 32768 op, 393204970.93 ns, 11.9997 us/op
+Result 72: 32768 op, 287179683.66 ns, 8.7640 us/op
+Result 73: 32768 op, 286945406.44 ns, 8.7569 us/op
+Result 74: 32768 op, 286058159.41 ns, 8.7298 us/op
+Result 75: 32768 op, 368807510.66 ns, 11.2551 us/op
+Result 76: 32768 op, 331639192.56 ns, 10.1208 us/op
+Result 77: 32768 op, 382778351.76 ns, 11.6815 us/op
+Result 78: 32768 op, 369102648.62 ns, 11.2641 us/op
+Result 79: 32768 op, 346788385.72 ns, 10.5831 us/op
+Result 80: 32768 op, 296306962.54 ns, 9.0426 us/op
+Result 81: 32768 op, 297675596.09 ns, 9.0843 us/op
+Result 82: 32768 op, 390268623.21 ns, 11.9101 us/op
+Result 83: 32768 op, 308252900.6 ns, 9.4071 us/op
+Result 84: 32768 op, 296688625.42 ns, 9.0542 us/op
+Result 85: 32768 op, 302224020.34 ns, 9.2231 us/op
+Result 86: 32768 op, 300519552.8 ns, 9.1711 us/op
+Result 87: 32768 op, 381006424.11 ns, 11.6274 us/op
+Result 88: 32768 op, 389813267.5 ns, 11.8962 us/op
+Result 89: 32768 op, 302081400.88 ns, 9.2188 us/op
+Result 90: 32768 op, 299161184.92 ns, 9.1297 us/op
+Result 91: 32768 op, 429530037.71 ns, 13.1082 us/op
+Result 92: 32768 op, 325266779.05 ns, 9.9264 us/op
+Result 93: 32768 op, 291101902.15 ns, 8.8837 us/op
+Result 94: 32768 op, 373184351.6 ns, 11.3887 us/op
+Result 95: 32768 op, 397476588.78 ns, 12.1300 us/op
+Result 96: 32768 op, 280483534.97 ns, 8.5597 us/op
+Result 97: 32768 op, 341516598.49 ns, 10.4223 us/op
+Result 98: 32768 op, 299132587.7 ns, 9.1288 us/op
+Result 99: 32768 op, 318865401.69 ns, 9.7310 us/op
+Result 100: 32768 op, 424827628.43 ns, 12.9647 us/op
+Result 101: 32768 op, 337079263.42 ns, 10.2868 us/op
+Result 102: 32768 op, 344345889.96 ns, 10.5086 us/op
+Result 103: 32768 op, 279910124.08 ns, 8.5422 us/op
+Result 104: 32768 op, 364257253.24 ns, 11.1162 us/op
+Result 105: 32768 op, 366112039.5 ns, 11.1729 us/op
+Result 106: 32768 op, 355497705.26 ns, 10.8489 us/op
+Result 107: 32768 op, 283034920.14 ns, 8.6375 us/op
+Result 108: 32768 op, 352857595.38 ns, 10.7684 us/op
+Result 109: 32768 op, 282961960.57 ns, 8.6353 us/op
+Result 110: 32768 op, 311930942.85 ns, 9.5194 us/op
+Result 111: 32768 op, 331561466.79 ns, 10.1185 us/op
+Result 112: 32768 op, 321096717.99 ns, 9.7991 us/op
+Result 113: 32768 op, 278294381.23 ns, 8.4929 us/op
+Result 114: 32768 op, 282711551.59 ns, 8.6277 us/op
+Result 115: 32768 op, 299543581.06 ns, 9.1413 us/op
+Result 116: 32768 op, 394313296.46 ns, 12.0335 us/op
+Result 117: 32768 op, 338898853.1 ns, 10.3424 us/op
+Result 118: 32768 op, 284608867.04 ns, 8.6856 us/op
+Result 119: 32768 op, 368972127.98 ns, 11.2601 us/op
+Result 120: 32768 op, 381772316.28 ns, 11.6508 us/op
+Result 121: 32768 op, 290688709.01 ns, 8.8711 us/op
+Result 122: 32768 op, 288338604.27 ns, 8.7994 us/op
+Result 123: 32768 op, 304090172.16 ns, 9.2801 us/op
+Result 124: 32768 op, 362229417.15 ns, 11.0544 us/op
+Result 125: 32768 op, 322191111.54 ns, 9.8325 us/op
+Result 126: 32768 op, 312463291.07 ns, 9.5356 us/op
+Result 127: 32768 op, 290177258.76 ns, 8.8555 us/op
+Result 128: 32768 op, 355145372.86 ns, 10.8382 us/op
+Result 129: 32768 op, 371715994.42 ns, 11.3439 us/op
+Result 130: 32768 op, 302900821.18 ns, 9.2438 us/op
+Result 131: 32768 op, 316805302.07 ns, 9.6681 us/op
+Result 132: 32768 op, 403230129.15 ns, 12.3056 us/op
+Result 133: 32768 op, 320052919.52 ns, 9.7672 us/op
+Result 134: 32768 op, 407971401.32 ns, 12.4503 us/op
+Result 135: 32768 op, 299583177.21 ns, 9.1426 us/op
+Result 136: 32768 op, 331525903.58 ns, 10.1174 us/op
+Result 137: 32768 op, 388412370.42 ns, 11.8534 us/op
+Result 138: 32768 op, 287924311.23 ns, 8.7868 us/op
+Result 139: 32768 op, 382487246.74 ns, 11.6726 us/op
+Result 140: 32768 op, 304547361.03 ns, 9.2940 us/op
+Result 141: 32768 op, 311673567.88 ns, 9.5115 us/op
+Result 142: 32768 op, 278882824 ns, 8.5108 us/op
+Result 143: 32768 op, 309085519.62 ns, 9.4325 us/op
+Result 144: 32768 op, 353367945.74 ns, 10.7839 us/op
+Result 145: 32768 op, 351239652.76 ns, 10.7190 us/op
+Result 146: 32768 op, 297855611.91 ns, 9.0898 us/op
+Result 147: 32768 op, 348401562.14 ns, 10.6324 us/op
+Result 148: 32768 op, 362423731.59 ns, 11.0603 us/op
+Result 149: 32768 op, 273020394.22 ns, 8.3319 us/op
+Result 150: 32768 op, 384305369.9 ns, 11.7281 us/op
+Result 151: 32768 op, 392663456.93 ns, 11.9831 us/op
+Result 152: 32768 op, 311582643.39 ns, 9.5087 us/op
+Result 153: 32768 op, 296330060.3 ns, 9.0433 us/op
+Result 154: 32768 op, 291841763.52 ns, 8.9063 us/op
+Result 155: 32768 op, 288981308.42 ns, 8.8190 us/op
+Result 156: 32768 op, 306848337.22 ns, 9.3643 us/op
+Result 157: 32768 op, 437559623.37 ns, 13.3533 us/op
+Result 158: 32768 op, 289679740.48 ns, 8.8403 us/op
+Result 159: 32768 op, 362927849.22 ns, 11.0757 us/op
+Result 160: 32768 op, 337192185.77 ns, 10.2903 us/op
+Result 161: 32768 op, 281983789.04 ns, 8.6055 us/op
+Result 162: 32768 op, 292928824.46 ns, 8.9395 us/op
+Result 163: 32768 op, 326639812.17 ns, 9.9683 us/op
+Result 164: 32768 op, 422602911.49 ns, 12.8968 us/op
+Result 165: 32768 op, 332941099.26 ns, 10.1606 us/op
+Result 166: 32768 op, 369475512.35 ns, 11.2755 us/op
+Result 167: 32768 op, 380232099.42 ns, 11.6038 us/op
+Result 168: 32768 op, 368789912.37 ns, 11.2546 us/op
+Result 169: 32768 op, 324443325.81 ns, 9.9012 us/op
+Result 170: 32768 op, 331676588.92 ns, 10.1220 us/op
+Result 171: 32768 op, 348278007.49 ns, 10.6286 us/op
+Result 172: 32768 op, 281256393.13 ns, 8.5833 us/op
+Result 173: 32768 op, 285635433.86 ns, 8.7169 us/op
+Result 174: 32768 op, 338426632.37 ns, 10.3280 us/op
+Result 175: 32768 op, 282356652.78 ns, 8.6168 us/op
+Result 176: 32768 op, 383137283.51 ns, 11.6924 us/op
+Result 177: 32768 op, 461712907.39 ns, 14.0904 us/op
+Result 178: 32768 op, 270308791.3 ns, 8.2492 us/op
+Result 179: 32768 op, 458143754.55 ns, 13.9814 us/op
+Result 180: 32768 op, 304707945.41 ns, 9.2989 us/op
+Result 181: 32768 op, 288624576.45 ns, 8.8081 us/op
+Result 182: 32768 op, 341856465.43 ns, 10.4326 us/op
+Result 183: 32768 op, 304380543.92 ns, 9.2890 us/op
+Result 184: 32768 op, 347006897.8 ns, 10.5898 us/op
+Result 185: 32768 op, 301358037.91 ns, 9.1967 us/op
+Result 186: 32768 op, 287166118.31 ns, 8.7636 us/op
+Result 187: 32768 op, 355122641.74 ns, 10.8375 us/op
+Result 188: 32768 op, 298938639.9 ns, 9.1229 us/op
+Result 189: 32768 op, 410237914.19 ns, 12.5195 us/op
+Result 190: 32768 op, 350407400.37 ns, 10.6936 us/op
+
+
+Mean = 10.1662 us, StdError = 0.0718 us (0.71%); N = 397, StdDev = 1.4302 us
+Min = 8.0812 us, Q1 = 8.8774 us, Median = 9.8325 us, Q3 = 11.2474 us, Max = 14.0904 us
+IQR = 2.3699 us, LowerFence = 5.3225 us, UpperFence = 14.8023 us
+ConfidenceInterval = [10.0255 us; 10.3069 us] (CI 95%)
+Skewness = 0,581272405159569, Kurtosis = 2,32073801691148
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\FindFirstEqualByte-report.csv
+  BenchmarkDotNet.Artifacts\results\FindFirstEqualByte-report-github.md
+  BenchmarkDotNet.Artifacts\results\FindFirstEqualByte-report.html
+
+// * Detailed results *
+FindFirstEqualByte_RunOld
+Mean = 10.3158 us, StdError = 0.0749 us (0.73%); N = 363, StdDev = 1.4272 us
+Min = 7.6364 us, Q1 = 9.1399 us, Median = 10.1309 us, Q3 = 11.3290 us, Max = 15.0394 us
+IQR = 2.1892 us, LowerFence = 5.8561 us, UpperFence = 14.6128 us
+ConfidenceInterval = [10.1690 us; 10.4626 us] (CI 95%)
+Skewness = 0,493365299138147, Kurtosis = 2,68470932972426
+
+
+FindFirstEqualByte_RunTernary
+Mean = 11.7590 us, StdError = 0.1092 us (0.93%); N = 134, StdDev = 1.2640 us
+Min = 9.4725 us, Q1 = 10.6658 us, Median = 11.5348 us, Q3 = 12.5776 us, Max = 15.3244 us
+IQR = 1.9118 us, LowerFence = 7.7981 us, UpperFence = 15.4454 us
+ConfidenceInterval = [11.5449 us; 11.9730 us] (CI 95%)
+Skewness = 0,600338745082838, Kurtosis = 2,75655376362826
+
+
+FindFirstEqualByte_RunIfs
+Mean = 10.1662 us, StdError = 0.0718 us (0.71%); N = 397, StdDev = 1.4302 us
+Min = 8.0812 us, Q1 = 8.8774 us, Median = 9.8325 us, Q3 = 11.2474 us, Max = 14.0904 us
+IQR = 2.3699 us, LowerFence = 5.3225 us, UpperFence = 14.8023 us
+ConfidenceInterval = [10.0255 us; 10.3069 us] (CI 95%)
+Skewness = 0,581272405159569, Kurtosis = 2,32073801691148
+
+
+Total time: 00:04:35 (275.96 sec)
+
+// * Summary *
+
+Host Process Environment Information:
+BenchmarkDotNet.Core=v0.9.9.0
+OS=Windows
+Processor=?, ProcessorCount=4
+Frequency=2727538 ticks, Resolution=366.6310 ns, Timer=TSC
+CLR=CORE, Arch=64-bit ? [RyuJIT]
+GC=Concurrent Workstation
+dotnet cli version: 1.0.0-preview2-003121
+
+Type=FindFirstEqualByte  Mode=Throughput  
+
+     Method |     Median |    StdDev |         Q1 |         Q3 | CI 95% Lower | CI 95% Upper |
+----------- |----------- |---------- |----------- |----------- |------------- |------------- |
+     RunOld | 10.1309 us | 1.4272 us |  9.1399 us | 11.3290 us |   10.1690 us |   10.4626 us |
+ RunTernary | 11.5348 us | 1.2640 us | 10.6658 us | 12.5776 us |   11.5449 us |   11.9730 us |
+     RunIfs |  9.8325 us | 1.4302 us |  8.8774 us | 11.2474 us |   10.0255 us |   10.3069 us |
+
+// ***** BenchmarkRunner: End *****
+t 5: 16384 op, 185761664.92 ns, 11.3380 us/op
+MainTarget 6: 16384 op, 163988916.01 ns, 10.0091 us/op
+MainTarget 7: 16384 op, 133871645.42 ns, 8.1709 us/op
+MainTarget 8: 16384 op, 182453186.72 ns, 11.1361 us/op
+MainTarget 9: 16384 op, 219402626.1 ns, 13.3913 us/op
+MainTarget 10: 16384 op, 172643607.53 ns, 10.5373 us/op
+MainTarget 11: 16384 op, 146982003.55 ns, 8.9711 us/op
+MainTarget 12: 16384 op, 150036773.09 ns, 9.1575 us/op
+MainTarget 13: 16384 op, 152809603.39 ns, 9.3268 us/op
+MainTarget 14: 16384 op, 155111312.84 ns, 9.4672 us/op
+MainTarget 15: 16384 op, 152467536.66 ns, 9.3059 us/op
+MainTarget 16: 16384 op, 159881182.22 ns, 9.7584 us/op
+MainTarget 17: 16384 op, 155525972.51 ns, 9.4926 us/op
+MainTarget 18: 16384 op, 154265128.48 ns, 9.4156 us/op
+MainTarget 19: 16384 op, 152529130.67 ns, 9.3096 us/op
+MainTarget 20: 16384 op, 155498108.55 ns, 9.4909 us/op
+MainTarget 21: 16384 op, 158645635.73 ns, 9.6830 us/op
+MainTarget 22: 16384 op, 151895958.92 ns, 9.2710 us/op
+MainTarget 23: 16384 op, 157895875.33 ns, 9.6372 us/op
+MainTarget 24: 16384 op, 149807995.34 ns, 9.1436 us/op
+MainTarget 25: 16384 op, 158373595.53 ns, 9.6664 us/op
+MainTarget 26: 16384 op, 162068869.43 ns, 9.8919 us/op
+MainTarget 27: 16384 op, 158619604.93 ns, 9.6814 us/op
+MainTarget 28: 16384 op, 191146374.5 ns, 11.6666 us/op
+MainTarget 29: 16384 op, 174974280.83 ns, 10.6796 us/op
+MainTarget 30: 16384 op, 138734272.45 ns, 8.4677 us/op
+MainTarget 31: 16384 op, 149049069.16 ns, 9.0972 us/op
+MainTarget 32: 16384 op, 210635745.5 ns, 12.8562 us/op
+MainTarget 33: 16384 op, 160047632.7 ns, 9.7685 us/op
+MainTarget 34: 16384 op, 155195271.34 ns, 9.4724 us/op
+MainTarget 35: 16384 op, 152897228.2 ns, 9.3321 us/op
+MainTarget 36: 16384 op, 218238939.29 ns, 13.3202 us/op
+MainTarget 37: 16384 op, 219254507.18 ns, 13.3822 us/op
+MainTarget 38: 16384 op, 160012802.75 ns, 9.7664 us/op
+MainTarget 39: 16384 op, 214041380.91 ns, 13.0640 us/op
+MainTarget 40: 16384 op, 148415530.78 ns, 9.0586 us/op
+MainTarget 41: 16384 op, 179265696.76 ns, 10.9415 us/op
+MainTarget 42: 16384 op, 154379150.72 ns, 9.4226 us/op
+MainTarget 43: 16384 op, 151416405.56 ns, 9.2417 us/op
+MainTarget 44: 16384 op, 146177981.75 ns, 8.9220 us/op
+MainTarget 45: 16384 op, 153584661.33 ns, 9.3741 us/op
+MainTarget 46: 16384 op, 155012322.47 ns, 9.4612 us/op
+MainTarget 47: 16384 op, 155727252.93 ns, 9.5048 us/op
+MainTarget 48: 16384 op, 245821689.74 ns, 15.0038 us/op
+MainTarget 49: 16384 op, 174584552.08 ns, 10.6558 us/op
+MainTarget 50: 16384 op, 143984061.82 ns, 8.7881 us/op
+MainTarget 51: 16384 op, 164059675.8 ns, 10.0134 us/op
+MainTarget 52: 16384 op, 219917742.67 ns, 13.4227 us/op
+MainTarget 53: 16384 op, 159667802.98 ns, 9.7453 us/op
+MainTarget 54: 16384 op, 148066498.07 ns, 9.0373 us/op
+MainTarget 55: 16384 op, 149388202.84 ns, 9.1179 us/op
+MainTarget 56: 16384 op, 159795757.2 ns, 9.7532 us/op
+MainTarget 57: 16384 op, 150986347.39 ns, 9.2155 us/op
+MainTarget 58: 16384 op, 150790199.81 ns, 9.2035 us/op
+MainTarget 59: 16384 op, 156619632.8 ns, 9.5593 us/op
+MainTarget 60: 16384 op, 181738622.89 ns, 11.0924 us/op
+MainTarget 61: 16384 op, 174722038.7 ns, 10.6642 us/op
+MainTarget 62: 16384 op, 145626935.35 ns, 8.8884 us/op
+MainTarget 63: 16384 op, 209841622.74 ns, 12.8077 us/op
+MainTarget 64: 16384 op, 169891675.2 ns, 10.3694 us/op
+MainTarget 65: 16384 op, 149483526.9 ns, 9.1238 us/op
+MainTarget 66: 16384 op, 149314143.38 ns, 9.1134 us/op
+
+Result 1: 16384 op, 224718042.43 ns, 13.7157 us/op
+Result 2: 16384 op, 176334481.87 ns, 10.7626 us/op
+Result 3: 16384 op, 169747222.59 ns, 10.3605 us/op
+Result 4: 16384 op, 157355827.86 ns, 9.6042 us/op
+Result 5: 16384 op, 185675873.26 ns, 11.3328 us/op
+Result 6: 16384 op, 163903124.36 ns, 10.0039 us/op
+Result 7: 16384 op, 133785853.76 ns, 8.1656 us/op
+Result 8: 16384 op, 182367395.06 ns, 11.1308 us/op
+Result 9: 16384 op, 219316834.45 ns, 13.3860 us/op
+Result 10: 16384 op, 172557815.88 ns, 10.5321 us/op
+Result 11: 16384 op, 146896211.9 ns, 8.9658 us/op
+Result 12: 16384 op, 149950981.43 ns, 9.1523 us/op
+Result 13: 16384 op, 152723811.73 ns, 9.3215 us/op
+Result 14: 16384 op, 155025521.18 ns, 9.4620 us/op
+Result 15: 16384 op, 152381745 ns, 9.3006 us/op
+Result 16: 16384 op, 159795390.57 ns, 9.7531 us/op
+Result 17: 16384 op, 155440180.85 ns, 9.4873 us/op
+Result 18: 16384 op, 154179336.82 ns, 9.4104 us/op
+Result 19: 16384 op, 152443339.01 ns, 9.3044 us/op
+Result 20: 16384 op, 155412316.9 ns, 9.4856 us/op
+Result 21: 16384 op, 158559844.08 ns, 9.6777 us/op
+Result 22: 16384 op, 151810167.26 ns, 9.2658 us/op
+Result 23: 16384 op, 157810083.67 ns, 9.6320 us/op
+Result 24: 16384 op, 149722203.69 ns, 9.1383 us/op
+Result 25: 16384 op, 158287803.87 ns, 9.6611 us/op
+Result 26: 16384 op, 161983077.78 ns, 9.8867 us/op
+Result 27: 16384 op, 158533813.28 ns, 9.6761 us/op
+Result 28: 16384 op, 191060582.84 ns, 11.6614 us/op
+Result 29: 16384 op, 174888489.18 ns, 10.6743 us/op
+Result 30: 16384 op, 138648480.79 ns, 8.4624 us/op
+Result 31: 16384 op, 148963277.51 ns, 9.0920 us/op
+Result 32: 16384 op, 210549953.84 ns, 12.8509 us/op
+Result 33: 16384 op, 159961841.04 ns, 9.7633 us/op
+Result 34: 16384 op, 155109479.68 ns, 9.4671 us/op
+Result 35: 16384 op, 152811436.54 ns, 9.3269 us/op
+Result 36: 16384 op, 218153147.64 ns, 13.3150 us/op
+Result 37: 16384 op, 219168715.52 ns, 13.3770 us/op
+Result 38: 16384 op, 159927011.1 ns, 9.7612 us/op
+Result 39: 16384 op, 213955589.25 ns, 13.0588 us/op
+Result 40: 16384 op, 148329739.13 ns, 9.0533 us/op
+Result 41: 16384 op, 179179905.1 ns, 10.9363 us/op
+Result 42: 16384 op, 154293359.07 ns, 9.4173 us/op
+Result 43: 16384 op, 151330613.91 ns, 9.2365 us/op
+Result 44: 16384 op, 146092190.1 ns, 8.9168 us/op
+Result 45: 16384 op, 153498869.68 ns, 9.3688 us/op
+Result 46: 16384 op, 154926530.81 ns, 9.4560 us/op
+Result 47: 16384 op, 155641461.27 ns, 9.4996 us/op
+Result 48: 16384 op, 245735898.09 ns, 14.9985 us/op
+Result 49: 16384 op, 174498760.42 ns, 10.6506 us/op
+Result 50: 16384 op, 143898270.16 ns, 8.7829 us/op
+Result 51: 16384 op, 163973884.14 ns, 10.0082 us/op
+Result 52: 16384 op, 219831951.01 ns, 13.4175 us/op
+Result 53: 16384 op, 159582011.32 ns, 9.7401 us/op
+Result 54: 16384 op, 147980706.41 ns, 9.0320 us/op
+Result 55: 16384 op, 149302411.19 ns, 9.1127 us/op
+Result 56: 16384 op, 159709965.54 ns, 9.7479 us/op
+Result 57: 16384 op, 150900555.74 ns, 9.2102 us/op
+Result 58: 16384 op, 150704408.15 ns, 9.1983 us/op
+Result 59: 16384 op, 156533841.14 ns, 9.5541 us/op
+Result 60: 16384 op, 181652831.23 ns, 11.0872 us/op
+Result 61: 16384 op, 174636247.05 ns, 10.6590 us/op
+Result 62: 16384 op, 145541143.7 ns, 8.8831 us/op
+Result 63: 16384 op, 209755831.08 ns, 12.8025 us/op
+Result 64: 16384 op, 169805883.55 ns, 10.3641 us/op
+Result 65: 16384 op, 149397735.25 ns, 9.1185 us/op
+Result 66: 16384 op, 149228351.72 ns, 9.1082 us/op
+
+
+Mean = 10.3329 us, StdError = 0.0928 us (0.9%); N = 293, StdDev = 1.5883 us
+Min = 8.0344 us, Q1 = 9.1290 us, Median = 9.7704 us, Q3 = 11.3335 us, Max = 15.7755 us
+IQR = 2.2045 us, LowerFence = 5.8223 us, UpperFence = 14.6402 us
+ConfidenceInterval = [10.1510 us; 10.5148 us] (CI 95%)
+Skewness = 0,984738855991434, Kurtosis = 3,39575092019453
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\FindFirstEqualByte-report.csv
+  BenchmarkDotNet.Artifacts\results\FindFirstEqualByte-report-github.md
+  BenchmarkDotNet.Artifacts\results\FindFirstEqualByte-report.html
+
+// * Detailed results *
+FindFirstEqualByte_RunOld
+Mean = 10.3936 us, StdError = 0.0777 us (0.75%); N = 420, StdDev = 1.5925 us
+Min = 7.8083 us, Q1 = 9.0077 us, Median = 10.4207 us, Q3 = 11.5409 us, Max = 19.6564 us
+IQR = 2.5332 us, LowerFence = 5.2079 us, UpperFence = 15.3407 us
+ConfidenceInterval = [10.2413 us; 10.5459 us] (CI 95%)
+Skewness = 0,730318596751431, Kurtosis = 4,6678095422885
+
+
+FindFirstEqualByte_RunTernary
+Mean = 11.6611 us, StdError = 0.0828 us (0.71%); N = 267, StdDev = 1.3522 us
+Min = 9.2481 us, Q1 = 10.4317 us, Median = 11.5859 us, Q3 = 12.7477 us, Max = 15.3984 us
+IQR = 2.3160 us, LowerFence = 6.9576 us, UpperFence = 16.2218 us
+ConfidenceInterval = [11.4989 us; 11.8233 us] (CI 95%)
+Skewness = 0,294966093303731, Kurtosis = 2,25145634157406
+
+
+FindFirstEqualByte_RunIfs
+Mean = 10.3329 us, StdError = 0.0928 us (0.9%); N = 293, StdDev = 1.5883 us
+Min = 8.0344 us, Q1 = 9.1290 us, Median = 9.7704 us, Q3 = 11.3335 us, Max = 15.7755 us
+IQR = 2.2045 us, LowerFence = 5.8223 us, UpperFence = 14.6402 us
+ConfidenceInterval = [10.1510 us; 10.5148 us] (CI 95%)
+Skewness = 0,984738855991434, Kurtosis = 3,39575092019453
+
+
+Total time: 00:04:52 (292.73 sec)
+
+// * Summary *
+
+Host Process Environment Information:
+BenchmarkDotNet.Core=v0.9.9.0
+OS=Windows
+Processor=?, ProcessorCount=4
+Frequency=2727538 ticks, Resolution=366.6310 ns, Timer=TSC
+CLR=CORE, Arch=64-bit ? [RyuJIT]
+GC=Concurrent Workstation
+dotnet cli version: 1.0.0-preview2-003121
+
+Type=FindFirstEqualByte  Mode=Throughput  
+
+     Method |     Median |    StdDev |
+----------- |----------- |---------- |
+     RunOld | 10.4207 us | 1.5925 us |
+ RunTernary | 11.5859 us | 1.3522 us |
+     RunIfs |  9.7704 us | 1.5883 us |
+
+// ***** BenchmarkRunner: End *****
