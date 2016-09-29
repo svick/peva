@@ -10,7 +10,6 @@
 > plot(data$old, ylab='old', ylim=ylim)
 > plot(data$ternary, ylab='ternary', ylim=ylim)
 > plot(data$ifs, ylab='ifs', ylim=ylim)
-> data <- tail(data, -100)
 > hist.with.norm <- function(x, lab, ymax) {
 + h <- hist(x, xlab=lab, ylim=c(0, ymax), main='')
 + xfit<-seq(min(x),max(x),length=40)
@@ -18,10 +17,11 @@
 + yfit <- yfit*diff(h$mids[1:2])*length(x)
 + lines(xfit, yfit, lwd=2)
 + }
-> hist.with.norm(data$old, 'old', 100)
-> hist.with.norm(data$ternary, 'ternary', 100)
-> hist.with.norm(data$ifs, 'ifs', 100)
+> hist.with.norm(data$old, 'old', 200)
+> hist.with.norm(data$ternary, 'ternary', 200)
+> hist.with.norm(data$ifs, 'ifs', 200)
 > par(mfrow=c(1,1))
 > boxplot(data)
 > library('psych')
 > error.bars(data)
+> error.bars(data[2-3])
