@@ -193,7 +193,7 @@ Following instructions of the benchmarking suite, I run the benchmark HTTP serve
 dotnet run --configuration Release --scenarios [default]
 ```
 
-To actually measure performance, the instructions recommend [the `wrk` tool] running on a separate machine. Since I do not have access to another machine on the same network, my measurements were performed on the same machine. To run `wrk`, I have used Ubuntu on Windows. The output of `wrk` looks like this:
+To actually measure performance, the instructions recommend [the `wrk` tool](https://github.com/wg/wrk) running on a separate machine. Since I do not have access to another machine on the same network, my measurements were performed on the same machine. To run `wrk`, I have used Ubuntu on Windows. The output of `wrk` looks like this:
 
 ```
 Running 10s test @ http://localhost:5000/plaintext
@@ -234,7 +234,7 @@ Based on the boxplot and the confidence intervals plot, it seems the changes do 
 
 ## Microbenchmark
 
-Measuring server throughput didn’t show any difference between the three versions of the code, but running the code in isolation could. For that purpose, I have created [a microbenchmark](microbenchmark) using Benchmark.Net (which handles measuring, warmup etc.). Inputs for the measured code are chosen pseudo-randomly (with fixed seed to ensure fairness) from a set of possible inputs.
+Measuring server throughput didn’t show any difference between the three versions of the code, but running the code in isolation could. For that purpose, I have created [a microbenchmark](microbenchmark) using [Benchmark.Net](https://perfdotnet.github.io/BenchmarkDotNet/) (which handles measuring, warmup etc.). Inputs for the measured code are chosen pseudo-randomly (with fixed seed to ensure fairness) from a set of possible inputs.
 
 Output from Benchmark.Net is:
 
@@ -257,11 +257,11 @@ Type=FindFirstEqualByte  Mode=Throughput
      RunIfs |  9.8325 us | 1.4302 us |  8.8774 us | 11.2474 us |   10.0255 us |   10.3069 us |
 ```
 
-Based on these results, “ternary” is actually slower than “old”. On the other hand, there is no strong evidence proving whether “old” or “ifs” is faster.
+Based on these results, “ternary” is actually slower than “old”, presumably due to the higher number of conditional jumps. On the other hand, there is no strong evidence proving whether “old” or “ifs” is faster.
 
 ## C++ microbenchmark
 
-Since the original goal of improving performance using conditional moves was not fulfilled, I have also performed a microbenchmark on the same code using a compiler that can use conditional moves: Visual C++. The core code is almost the same as in the C# microbenchmark, the main difference is removing code related to `Vector<T>`. Measuring is done using `std::chrono::steady_clock`.
+Since the original goal of improving performance using conditional moves was not fulfilled, I have also performed [a microbenchmark](microbenchmark-cpp) on the same code using a compiler that can use conditional moves: Visual C++. The core code is almost the same as in the C# microbenchmark, the main difference is removing code related to `Vector<T>`. Measuring is done using `std::chrono::steady_clock`.
 
 Generated machine code:
 
@@ -384,7 +384,7 @@ Based on confidence intervals plot, “ternary” is better than “ifs”. I wo
 
 Hardware:
 
-* Intel Core i5-2300 CPU @ 2.80GHz
+* Intel Core i5-2300 CPU @ 2.80GHz, 4 cores, no HT
  * even though I have disabled all frequency scaling options in BIOS, CPU frequency keeps fluctuating anyway
 * 32 KB L1D, 32 KB L1I, 256 KB L2, 6 MB L3 cache
 * 8 GB DDR3 RAM, 665 MHz
